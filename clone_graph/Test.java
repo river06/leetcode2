@@ -2,11 +2,13 @@ import java.util.*;
 
 public class Test {
 	public static void main(String[] args) {
-		Solution solver = new Solution();
-		UndirectedGraphNode node = new UndirectedGraphNode(0);
-		node.neighbors.add( node );
-		node.neighbors.add( node );
-		UndirectedGraphNode ret = solver.cloneGraph(node);
+		//Solution solver = new Solution();
+		Solution2 solver = new Solution2();
+		UndirectedGraphNode node0 = new UndirectedGraphNode(0);
+		UndirectedGraphNode node1 = new UndirectedGraphNode(1);
+		node0.neighbors.add( node1);
+		node1.neighbors.add( node0 );
+		UndirectedGraphNode ret = solver.cloneGraph(node0);
 
 		Queue<UndirectedGraphNode> queue =
 			new LinkedList<UndirectedGraphNode>();
