@@ -28,15 +28,16 @@ public class Solution {
 		// short cut
 		if(l_h == r_h) return (1<<r_h) -1;
 
-		int ret = 0;
-		if(isFullTree(root.left)){
+//		int ret = 0;
+		int ret = countNodes(root.left)+countNodes(root.right)+1;
+/*		if(isFullTree(root.left)){
 			ret = countNodes(root.right) + (1<<(l_h-1)) -1 +1;
 		}else{
 			ret = countNodes(root.left) + (1<<(r_h-1))-1 + 1;
-		}
+			}*/
 		return ret;
     }
-
+/*
 	boolean isFullTree(TreeNode root){
 		int r_h = 0;
 		int l_h = 0;
@@ -56,4 +57,5 @@ public class Solution {
 			return false;
 		}
 	}
+*/
 }
