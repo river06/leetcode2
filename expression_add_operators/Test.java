@@ -10,10 +10,10 @@ public class Test {
 		//int target = 5;
 		//String num = "00";
 		//int target = 0;
-		//String num = "3456237490";
-		//int target = 9191;
-		String num = "2147483648";
-		int target = -2147483648;
+		String num = "3456237490";
+		int target = 9191;
+		//String num = "2147483648";
+		//int target = -2147483648;
 
 		List<String> ret = solver.addOperators(num, target);
 		for(String str: ret) {

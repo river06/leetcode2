@@ -1,5 +1,5 @@
 import java.util.*;
-public class Solution {
+public class SolutionOT {
     public List<String> addOperators(String num, int target) {
         List<String> ret = new LinkedList<String>();
 		List<String> cand = findAllString(num);
