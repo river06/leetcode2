@@ -5,9 +5,8 @@ public class Solution {
         
     }
     private int findMinHelper(int[] nums, int idx1, int idx2) {
-        if(idx1==idx2) return nums[idx1];
-        if(nums[idx1] < nums[idx2]) return nums[idx1];
         
+        // deal with duplicates first
         int idxMid = (idx1 + idx2)/2;
         if( nums[idxMid] == nums[idx1] && nums[idxMid] == nums[idx2]){
             while(idx1<idxMid) {
@@ -19,6 +18,10 @@ public class Solution {
                 if( nums[idx2] != nums[idxMid]) break;
             }
         }
+        
+        if(idx1==idx2) return nums[idx1];
+        if(nums[idx1] < nums[idx2]) return nums[idx1];
+        idxMid = (idx1+idx2)/2;
         if( nums[idxMid] >= nums[idx1]) {
             return findMinHelper(nums, idxMid+1, idx2);
         } else {
