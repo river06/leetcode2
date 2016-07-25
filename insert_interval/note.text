@@ -1,0 +1,19 @@
+public List<Interval> insert1(List<Interval> intervals, Interval newInterval) {
+        intervals = new ArrayList<>(intervals);
+        Interval tmp;
+        ListIterator<Interval> listIterator = intervals.listIterator();
+        while (listIterator.hasNext()) {
+            tmp = listIterator.next();
+            if (newInterval.end < tmp.start) {
+                listIterator.previous();
+                listIterator.add(newInterval);
+                return intervals;
+            } else if (newInterval.start <= tmp.end) {
+                newInterval.start = Math.min(newInterval.start, tmp.start);
+                newInterval.end = Math.max(newInterval.end, tmp.end);
+                listIterator.remove();
+            }
+        }
+        listIterator.add(newInterval);
+        return intervals;
+    }
