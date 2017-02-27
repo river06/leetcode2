@@ -6,18 +6,18 @@ public class Solution {
             = new Hashtable<Integer, ArrayList<Integer>>();
         for(int i=0; i<nums.length; i++) {
             if(hashTable.containsKey(nums[i])) { 
-        		ArrayList<Integer> indices = hashTable.get(nums[i]);
+                ArrayList<Integer> indices = hashTable.get(nums[i]);
                 for( Integer index: indices ) {
                     if( Math.abs(index - i)<=k ) {
                         return true;
                     }
                 }
                 indices.add(i);
-        	} else {
+            } else {
                 ArrayList<Integer> indices = new ArrayList<Integer>();
                 indices.add(i);
-        		hashTable.put(nums[i], indices);
-        	}
+                hashTable.put(nums[i], indices);
+            }
         }
         return false;
     }
