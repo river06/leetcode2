@@ -18,4 +18,5 @@
 - **insert interval**: The first interval should be found by comparing ends with new interval.start 
 
 ## 2D dynamic programming
-- **unique paths, unique paths II**: maintain 2D matrix
+- **unique paths, unique paths II, minimum path sum**: maintain 2D matrix
+- **dungeon game**: 2D backwards
