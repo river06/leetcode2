@@ -24,3 +24,7 @@
 ## arrays misc
 - **set matrix zeros**: use first row and column to keep flags
 - **search 2D matrix**: binary search
+- **search 2D matrix II**: search by corner from top right to bottom left.
+
+## bucket sort
+- **sort colors**: bucket sort
