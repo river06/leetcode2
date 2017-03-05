@@ -20,3 +20,7 @@
 ## 2D dynamic programming
 - **unique paths, unique paths II, minimum path sum**: maintain 2D matrix
 - **dungeon game**: 2D backwards
+
+## arrays misc
+- **set matrix zeros**: use first row and column to keep flags
+- **search 2D matrix**: binary search
