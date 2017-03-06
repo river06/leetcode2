@@ -28,3 +28,6 @@
 
 ## bucket sort
 - **sort colors**: bucket sort
+
+## quick sort
+- **sort list**: have to use list trick and maybe find middle?
