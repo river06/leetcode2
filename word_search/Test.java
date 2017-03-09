@@ -17,8 +17,9 @@ public class Test {
 			System.out.println(" ");
 		}
 		
-		String word = "ABC";
+		String word = "ABCB";
 		boolean ret = solver.exist(board, word);
+		System.out.println(word);
 		System.out.println(ret);
 	}
 }
