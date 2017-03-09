@@ -31,3 +31,6 @@
 
 ## quick sort
 - **sort list**: have to use list trick and maybe find middle?
+
+## backtracking
+- **subsets**: backtracking
