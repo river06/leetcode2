@@ -18,7 +18,8 @@
 - **insert interval**: The first interval should be found by comparing ends with new interval.start 
 
 ## stair shape stack series
-- **largest rectangle in histogram**: increasing stack to find border, left and right sweep
+- **largest rectangle in histogram**: increasing stack to find border, ~~left and right sweep~~, left to right sweep is enough, when decrease, current bar is right border. Upside down with container with most waster.
+- **maximal rectangle**: loop of largest rectangle in histogram
 - **container with most water**: decreasing stack to find border, left sweep is enough
 
 ## 2D dynamic programming
