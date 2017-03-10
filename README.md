@@ -23,7 +23,7 @@
 - **container with most water**: decreasing stack to find border, left sweep is enough
 
 ## 2D dynamic programming
-- **unique paths, unique paths II, minimum path sum**: maintain 2D matrix
+- **unique paths, unique paths II, minimum path sum, maximal square**: maintain 2D matrix
 - **dungeon game**: 2D backwards
 
 ## arrays misc
