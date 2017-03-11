@@ -32,5 +32,8 @@
 ## quick sort
 - **sort list**: have to use list trick and maybe find middle?
 
+## merge sort
+- **merge sorted array**: merge from back to front
+
 ## backtracking
 - **subsets, word search**: backtracking
