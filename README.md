@@ -17,11 +17,18 @@
 - **merge interval**: In Java, use Collections.sort(), so that insert interval is unnecessary
 - **insert interval**: The first interval should be found by comparing ends with new interval.start 
 
+
 ## dynamic programming
 - **triangle**: DP backwards
 
+## stair shape stack series
+- **largest rectangle in histogram**: increasing stack to find border, ~~left and right sweep~~, left to right sweep is enough, when decrease, current bar is right border. Upside down with container with most waster.
+- **maximal rectangle**: loop of largest rectangle in histogram
+- **container with most water**: decreasing stack to find border, left sweep is enough
+
+
 ## 2D dynamic programming
-- **unique paths, unique paths II, minimum path sum**: maintain 2D matrix
+- **unique paths, unique paths II, minimum path sum, maximal square**: maintain 2D matrix
 - **dungeon game**: 2D backwards
 
 ## arrays misc
@@ -30,7 +37,7 @@
 - **search 2D matrix II**: search by corner from top right to bottom left.
 
 ## bucket sort
-- **sort colors**: bucket sort
+- **sort colors, remove duplicates from sorted array**: bucket sort
 
 ## quick sort
 - **sort list**: have to use list trick and maybe find middle?
