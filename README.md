@@ -17,15 +17,16 @@
 - **merge interval**: In Java, use Collections.sort(), so that insert interval is unnecessary
 - **insert interval**: The first interval should be found by comparing ends with new interval.start 
 
-
-## dynamic programming
-- **triangle**: DP backwards
+## strings
+- **word ladder": breadth first search, use string builder and hash set
 
 ## stair shape stack series
 - **largest rectangle in histogram**: increasing stack to find border, ~~left and right sweep~~, left to right sweep is enough, when decrease, current bar is right border. Upside down with container with most waster.
 - **maximal rectangle**: loop of largest rectangle in histogram
 - **container with most water**: decreasing stack to find border, left sweep is enough
 
+## 1D dynamic programming
+- **triangle**: DP backwards
 
 ## 2D dynamic programming
 - **unique paths, unique paths II, minimum path sum, maximal square**: maintain 2D matrix
