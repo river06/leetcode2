@@ -17,6 +17,9 @@
 - **merge interval**: In Java, use Collections.sort(), so that insert interval is unnecessary
 - **insert interval**: The first interval should be found by comparing ends with new interval.start 
 
+## dynamic programming
+- **triangle**: DP backwards
+
 ## 2D dynamic programming
 - **unique paths, unique paths II, minimum path sum**: maintain 2D matrix
 - **dungeon game**: 2D backwards
