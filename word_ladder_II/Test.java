@@ -3,13 +3,15 @@ public class Test {
 	public static void main(String[] args) {
 		Solution solver = new Solution();
 		String start = "hit";
-		String end = "cog";
-		Set<String> dict = new HashSet<String>();
+		String end = "cag";
+		List<String> dict = new ArrayList<String>();
 		dict.add("hot");
 		dict.add("dot");
 		dict.add("dog");
 		dict.add("lot");
 		dict.add("log");
+		dict.add("cog");
+		dict.add("cag");
 		List<List<String>> ret = solver.findLadders(start, end, dict);
 		for(int i=0; i<ret.size(); i++) {
 			List<String> ladder = ret.get(i);

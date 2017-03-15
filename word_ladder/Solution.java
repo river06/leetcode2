@@ -33,18 +33,6 @@ public class Solution {
 
 	List<String> nextWords (HashSet<String> hash, String midWord) {
 		List<String> ret = new LinkedList<String>();
-		/*char[] charArray = midWord.toCharArray();
-		for( int i=0; i<charArray.length; i++ ) {
-			char c = charArray[i];
-			for( char newChar = 'a'; newChar<='z'; newChar++ ) {
-				charArray[i] = newChar;
-				String newStr = String.valueOf( charArray );
-				if( wordList.remove( newStr )) {
-					ret.add( newStr );
-				}
-			}
-			charArray[i] = c;
-		}*/
 		for( int i=0; i<midWord.length(); i++ ) {
 			StringBuilder change = new StringBuilder(midWord);
 			for( char c='a'; c<='z'; c++ ) {
