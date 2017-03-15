@@ -18,7 +18,8 @@
 - **insert interval**: The first interval should be found by comparing ends with new interval.start 
 
 ## strings
-- **word ladder": breadth first search, use string builder and hash set
+- **word ladder**: breadth first search, use string builder and hash set
+- **word ladder II**: bfs, then dfs. Use map to track backwards path
 
 ## stair shape stack series
 - **largest rectangle in histogram**: increasing stack to find border, ~~left and right sweep~~, left to right sweep is enough, when decrease, current bar is right border. Upside down with container with most waster.
@@ -36,6 +37,7 @@
 - **set matrix zeros**: use first row and column to keep flags
 - **search 2D matrix**: binary search
 - **search 2D matrix II**: search by corner from top right to bottom left.
+- **longest consecutive sequence**: use set to get union 
 
 ## bucket sort
 - **sort colors, remove duplicates from sorted array**: bucket sort
