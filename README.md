@@ -28,6 +28,7 @@
 
 ## 1D dynamic programming
 - **triangle**: DP backwards
+- **maximum product subarray**: use maximum and minimum to keep track of results. Don't use positive and negative! 
 
 ## 2D dynamic programming
 - **unique paths, unique paths II, minimum path sum, maximal square**: maintain 2D matrix
@@ -38,6 +39,7 @@
 - **search 2D matrix**: binary search
 - **search 2D matrix II**: search by corner from top right to bottom left.
 - **longest consecutive sequence**: use set to get union 
+
 
 ## bucket sort
 - **sort colors, remove duplicates from sorted array**: bucket sort
