@@ -29,6 +29,7 @@
 ## 1D dynamic programming
 - **triangle**: DP backwards
 - **maximum product subarray**: use maximum and minimum to keep track of results. Don't use positive and negative! 
+- **product of array except self**: two sweeps
 
 ## 2D dynamic programming
 - **unique paths, unique paths II, minimum path sum, maximal square**: maintain 2D matrix
