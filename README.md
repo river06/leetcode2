@@ -25,6 +25,8 @@
 - **largest rectangle in histogram**: increasing stack to find border, ~~left and right sweep~~, left to right sweep is enough, when decrease, current bar is right border. Upside down with container with most waster.
 - **maximal rectangle**: loop of largest rectangle in histogram
 - **container with most water**: decreasing stack to find border, left sweep is enough
+- **trapping rain water**: decreasing stack 
+- **trapping rain water II**: actually BFS. Use queue to maintain spots that need to be checked again. Only check spots where water level is reduced, and their neightbors. 
 
 ## 1D dynamic programming
 - **triangle**: DP backwards
