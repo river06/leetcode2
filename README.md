@@ -42,7 +42,8 @@
 - **search 2D matrix**: binary search
 - **search 2D matrix II**: search by corner from top right to bottom left.
 - **longest consecutive sequence**: use set to get union 
-
+- **majority element**: Moore's algorithm. Count up and down
+- **majority element II**: Moore's algorithm variation. Notice how we have to add before substract
 
 ## bucket sort
 - **sort colors, remove duplicates from sorted array**: bucket sort
