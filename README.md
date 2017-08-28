@@ -20,6 +20,13 @@
 ## longest series
 - **longest substring without repeating characters**: Use hashmap to map characters to their indices.
 
+## palindrome series
+- **longest palindromic substring**
+    - Maximum common substring between reversed string (some tweak) - Dynamic programming
+    - Dynamic programming: p(i,j) if string(i,j) is palindrome
+    - Expand around center: be careful of even length palindrome
+    - Manacher algorithm
+
 ## strings
 - **word ladder**: breadth first search, use string builder and hash set
 - **word ladder II**: bfs, then dfs. Use map to track backwards path
