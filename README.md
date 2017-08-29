@@ -26,6 +26,10 @@
     - Dynamic programming: p(i,j) if string(i,j) is palindrome
     - Expand around center: be careful of even length palindrome
     - Manacher algorithm
+- **shortest palindrome**
+    - brutal force: reverse the string and compare the beginning and end
+    - KMP: Construct s + # + inv(s), and construct the prefix = suffix array
+    - two pointers algorithm: use the counting property.  
 
 ## strings
 - **word ladder**: breadth first search, use string builder and hash set
