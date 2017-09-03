@@ -2,11 +2,12 @@
 - ideas
 
 ## num_sum series
-- **two sum (number not sorted)**: hash map to register (number, target-number) pairs
+- **two sum (number not sorted)**: hash map to store `<number, position>` pairs
 - **two sum II (sorted)**: two pointers algorithm.
 - **three sum**: two pointers algorithm. Use one to sweep from start to end, the other to sweep backwards
 - **three sum closest**: basically two pointers algorithm
 - **four sum**: same two pointers algorithm as three sum. Remember to skip duplicate numbers
+- **four sum II**: hash map to store `<sum of elements in A, B; occurrences>` paris
 
 ## best time to buy and sell stock series
 - **I and II**: sweep. Consider this as 1D DP.
@@ -50,6 +51,7 @@
 ## 2D dynamic programming
 - **unique paths, unique paths II, minimum path sum, maximal square**: maintain 2D matrix
 - **dungeon game**: 2D backwards
+- **regular expression matching**: 3 cases: character before `*` used 0, 1, multiple times
 
 ## arrays misc
 - **set matrix zeros**: use first row and column to keep flags
