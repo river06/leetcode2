@@ -41,6 +41,7 @@
 
 ## calculator series
 - **basic calculator**: solved with two stacks: one for operands one for numbers
+- **basic calculator II**: one stack with pushing `1` trick. Be careful with negative number at the beginning.
 
 ## 1D dynamic programming
 - **triangle**: DP backwards
