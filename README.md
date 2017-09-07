@@ -74,6 +74,7 @@
 
 ## merge sort
 - **merge sorted array**: merge from back to front
+- **count of smaller number after self**: merge sort can count the numbers to the right/left when merging
 
 ## backtracking
 - **subsets, word search**: backtracking
