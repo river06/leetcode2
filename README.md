@@ -80,6 +80,7 @@
 - **sort colors**: Since there are only three colors, move numbers to the sides - throw 0s to the left throw 2s to the right.
 - **remove duplicates from sorted array**: bucket sort
 - **maximum gap**: buckets are of length (max-min)/(n-1), and use pigeon hole
+- **valid anagram**: alphabet buckets
 
 ## quick sort
 - **sort list**: have to use list trick and maybe find middle?
