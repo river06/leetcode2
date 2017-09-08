@@ -15,8 +15,8 @@
 - **IV**: 2D dynamic programming
 
 ## intervals series
-- **merge interval**: In Java, use Collections.sort(), so that insert interval is unnecessary
-- **insert interval**: The first interval should be found by comparing ends with new interval.start
+- **merge interval**: In Java, use Collections.sort(), so that insert interval is unnecessary. We can add one by one.
+- **insert interval**: The first interval should be found by comparing old interval's ends with new interval's start
 
 ## longest series
 - **longest substring without repeating characters**: Use hashmap to map characters to their indices.
@@ -66,13 +66,23 @@
 - **majority element**: Moore's algorithm. Count up and down
 - **majority element II**: Moore's algorithm variation. Notice how we have to add before substract
 
+## insertion sort
+- **insertion sort list**: Dummy head
+
+## counting sort
+
+## radix sort
+
 ## bucket sort
-- **sort colors, remove duplicates from sorted array**: bucket sort
+- **sort colors**: Since there are only three colors, move numbers to the sides - throw 0s to the left throw 2s to the right.
+- **remove duplicates from sorted array**: bucket sort
+- **maximum gap**: buckets are of length (max-min)/(n-1), and use pigeon hole
 
 ## quick sort
 - **sort list**: have to use list trick and maybe find middle?
 
 ## merge sort
+- **sort list**: merge sort can also solve the problem
 - **merge sorted array**: merge from back to front
 - **count of smaller number after self**: merge sort can count the numbers to the right/left when merging
 
