@@ -66,6 +66,9 @@
 - **majority element**: Moore's algorithm. Count up and down
 - **majority element II**: Moore's algorithm variation. Notice how we have to add before substract
 
+## sort
+- **largest number**: Just sort. Use a_b and b_a to decide which comes at first
+
 ## insertion sort
 - **insertion sort list**: Dummy head
 
