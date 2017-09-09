@@ -1,5 +1,5 @@
 # leetcode note
-- ideas
+----
 
 ## num sum series
 - **two sum (number not sorted)**: hash map to store `<number, position>` pairs
@@ -66,6 +66,9 @@
 - **majority element**: Moore's algorithm. Count up and down
 - **majority element II**: Moore's algorithm variation. Notice how we have to add before substract
 
+## hash
+- **intersection of two arrays**: hashset
+
 ## sort
 - **largest number**: Just sort. Use a_b and b_a to decide which comes at first
 - **wiggle sort**: sort pair by pair
@@ -97,6 +100,7 @@
 - **subsets, word search**: backtracking
 
 # MISC
+---
 - Java `int` can not be null. `Integer` is nullable. `Collection` contains `objects`.
 - Good practice to use generic forms?
     - `Set<T> foo = new HashSet<T>();`
