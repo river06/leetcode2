@@ -68,6 +68,9 @@
 
 ## sort
 - **largest number**: Just sort. Use a_b and b_a to decide which comes at first
+- **wiggle sort**: sort pair by pair
+- **wiggle sort II**: Quick select algorithm to find the `k`th largest element in array. Can be used to find median. Remember to use three way partition and index mapping.
+
 
 ## insertion sort
 - **insertion sort list**: Dummy head
