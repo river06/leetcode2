@@ -64,11 +64,11 @@
 - **search 2D matrix II**: search by corner from top right to bottom left.
 - **longest consecutive sequence**: use set to get union
 - **majority element**: Moore's algorithm. Count up and down
-- **majority element II**: Moore's algorithm variation. Notice how we have to add before substract
+- **majority element II**: Moore's algorithm variation. Notice how we have to add before subtract
 
 ## hash
-- **intersection of two arrays**: hashset
-
+- **intersection of two arrays**: hash set
+- **intersection of two arrays II**: hash map
 ## sort
 - **largest number**: Just sort. Use a_b and b_a to decide which comes at first
 - **wiggle sort**: sort pair by pair
