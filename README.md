@@ -116,6 +116,7 @@
 - **search in rotated sorted array**: use three pointers
 - **search for a range**
 - **search insertion position**
+- **sqrt(x)**
 
 #### `kth element`
 - **median of two sorted array**: binary search of `k` in the `k`th element
