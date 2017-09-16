@@ -76,6 +76,9 @@
 #### `kth element`
 - **median of two sorted array**: binary search of `k` in the `k`th element
 
+## Divide and conquer
+- **count complete tree nodes**: count left and right. Perfect tree short cut
+
 ## Dynamic programming
 #### `1D dynamic programming`
 - **triangle**: DP backwards
