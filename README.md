@@ -43,6 +43,39 @@
 - **basic calculator**: solved with two stacks: one for operands one for numbers
 - **basic calculator II**: one stack with pushing `1` trick. Be careful with negative number at the beginning.
 
+
+
+## Arrays
+- **set matrix zeros**: use first row and column to keep flags
+- **search 2D matrix**: binary search
+- **search 2D matrix II**: search by corner from top right to bottom left.
+- **longest consecutive sequence**: use set to get union
+- **majority element**: Moore's algorithm. Count up and down
+- **majority element II**: Moore's algorithm variation. Notice how we have to add before subtract
+
+## Backtracking
+- **subsets, word search**: backtracking
+
+## Binary search
+
+#### `Bit shift`
+- **divide two integers**: bit shift
+- **pow(x,n)**
+
+#### `three pointers`
+- **search in rotated sorted array**: use three pointers
+- **Search in Rotated Sorted Array II**: skip duplicated boundary
+- **Find Minimum in Rotated Sorted Array**
+- **Find Minimum in Rotated Sorted Array II**
+- **search for a range**
+- **search insertion position**
+- **sqrt(x)**
+- **Search a 2D Matrix**: I think converting 2D matrix to 1D by index mapping is better than searching rows and columns separately. At least code can be easier.
+- **Find Peak Element**: compare mid with mid-1 and mid+1
+
+#### `kth element`
+- **median of two sorted array**: binary search of `k` in the `k`th element
+
 ## Dynamic programming
 #### `1D dynamic programming`
 - **triangle**: DP backwards
@@ -54,18 +87,6 @@
 - **unique paths, unique paths II, minimum path sum, maximal square**: maintain 2D matrix
 - **dungeon game**: 2D backwards
 - **regular expression matching**: 3 cases: character before `*` used 0, 1, multiple times
-
-## Strings
-- **word ladder**: breadth first search, use string builder and hash set
-- **word ladder II**: bfs, then dfs. Use map to track backwards path
-
-## Arrays
-- **set matrix zeros**: use first row and column to keep flags
-- **search 2D matrix**: binary search
-- **search 2D matrix II**: search by corner from top right to bottom left.
-- **longest consecutive sequence**: use set to get union
-- **majority element**: Moore's algorithm. Count up and down
-- **majority element II**: Moore's algorithm variation. Notice how we have to add before subtract
 
 ## Hash
 
@@ -103,23 +124,19 @@
 - **wiggle sort**: sort pair by pair
 - **wiggle sort II**: Quick select algorithm to find the `k`th largest element in array. Can be used to find median. Remember to use three way partition and index mapping.
 
-## Backtracking
-- **subsets, word search**: backtracking
 
-## Binary search
+## Strings
+- **word ladder**: breadth first search, use string builder and hash set
+- **word ladder II**: bfs, then dfs. Use map to track backwards path
 
-#### `Bit shift`
-- **divide two integers**: bit shift
-- **pow(x,n)**
+## Two pointers
+- **minimum size subarray sum**: two pointers
 
-#### `three pointers`
-- **search in rotated sorted array**: use three pointers
-- **search for a range**
-- **search insertion position**
-- **sqrt(x)**
 
-#### `kth element`
-- **median of two sorted array**: binary search of `k` in the `k`th element
+
+
+
+
 
 ---
 # MISC
