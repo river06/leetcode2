@@ -76,6 +76,10 @@
 #### `kth element`
 - **median of two sorted array**: binary search of `k` in the `k`th element
 
+## Binary search tree
+- **count complete tree nodes**
+- **kth smallest element in a BST**: in order traversal 
+
 ## Divide and conquer
 - **count complete tree nodes**: count left and right. Perfect tree short cut
 
