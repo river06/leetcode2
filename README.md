@@ -73,6 +73,7 @@
 - **Search a 2D Matrix**: I think converting 2D matrix to 1D by index mapping is better than searching rows and columns separately. At least code can be easier.
 - **Find Peak Element**: compare mid with mid-1 and mid+1
 - **h-index II**
+- **first bad version**
 
 #### `kth element`
 - **median of two sorted array**: binary search of `k` in the `k`th element
