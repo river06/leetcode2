@@ -72,13 +72,14 @@
 - **sqrt(x)**
 - **Search a 2D Matrix**: I think converting 2D matrix to 1D by index mapping is better than searching rows and columns separately. At least code can be easier.
 - **Find Peak Element**: compare mid with mid-1 and mid+1
+- **h-index II**
 
 #### `kth element`
 - **median of two sorted array**: binary search of `k` in the `k`th element
 
 ## Binary search tree
 - **count complete tree nodes**
-- **kth smallest element in a BST**: in order traversal 
+- **kth smallest element in a BST**: in order traversal
 
 ## Divide and conquer
 - **count complete tree nodes**: count left and right. Perfect tree short cut
