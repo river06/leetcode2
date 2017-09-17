@@ -77,6 +77,7 @@
 - **Find Peak Element**: compare mid with mid-1 and mid+1
 - **h-index II**
 - **first bad version**
+- **guess number higher or lower**: be careful of overflow!
 
 #### `kth element`
 - **median of two sorted array**: binary search of `k` in the `k`th element
