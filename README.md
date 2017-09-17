@@ -72,6 +72,7 @@
 - **search for a range**
 - **search insertion position**
 - **sqrt(x)**
+- **valid perfect square**: basically sqrt
 - **Search a 2D Matrix**: I think converting 2D matrix to 1D by index mapping is better than searching rows and columns separately. At least code can be easier.
 - **Find Peak Element**: compare mid with mid-1 and mid+1
 - **h-index II**
@@ -81,7 +82,7 @@
 - **median of two sorted array**: binary search of `k` in the `k`th element
 
 #### `search of sum`
-- **max sum of rectangle no larger than k**: basically brute force version of 1D max sum of sub array no larger than `k`. Do a binary search to find any value > sum - k among previous sums. 
+- **max sum of rectangle no larger than k**: basically brute force version of 1D max sum of sub array no larger than `k`. Do a binary search to find any value > sum - k among previous sums.
 
 ## Binary search tree
 - **count complete tree nodes**
