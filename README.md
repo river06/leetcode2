@@ -137,6 +137,9 @@
 - **wiggle sort**: sort pair by pair
 - **wiggle sort II**: Quick select algorithm to find the `k`th largest element in array. Can be used to find median. Remember to use three way partition and index mapping.
 
+## Stack
+- **stair shape series**
+- **longest increasing subsequence**, **Russian envelope**: although these are tagged as binary search, the key idea is to keep a "stack" of visited numbers
 
 ## Strings
 - **word ladder**: breadth first search, use string builder and hash set
