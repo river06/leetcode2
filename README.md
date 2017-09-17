@@ -43,6 +43,8 @@
 - **basic calculator**: solved with two stacks: one for operands one for numbers
 - **basic calculator II**: one stack with pushing `1` trick. Be careful with negative number at the beginning.
 
+#### `loop series`
+- **find the duplicate number**: duplicated number forms a loop. Use two pointers to find the entrance. Return index.
 
 
 ## Arrays
