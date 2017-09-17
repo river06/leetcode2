@@ -92,7 +92,9 @@
 - **triangle**: DP backwards
 - **maximum product subarray**: use maximum and minimum to keep track of results. Don't use positive and negative!
 - **product of array except self**: two sweeps
-- **coin change**: `DP[i]` stores the value of minimum coins for amount `i`. Need to optimize over coins.
+- **DP with optimization**
+    - **coin change**: `DP[i]` stores the value of minimum coins for amount `i`. Need to optimize over coins.
+    - **longest increasing subsequence**: `DP[i]` stores the longest subsequence using `nums[i]`
 
 #### `2D dynamic programming`
 - **unique paths, unique paths II, minimum path sum, maximal square**: maintain 2D matrix
