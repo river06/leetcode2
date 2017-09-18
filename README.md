@@ -81,6 +81,7 @@
 
 #### `kth element`
 - **median of two sorted array**: binary search of `k` in the `k`th element
+- **kth smallest element in a sorted matrix**: binary search of guessed number and find its position in matrix 
 
 #### `search of sum`
 - **max sum of rectangle no larger than k**: basically brute force version of 1D max sum of sub array no larger than `k`. Do a binary search to find any value > sum - k among previous sums.
