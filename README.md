@@ -79,9 +79,10 @@
 - **first bad version**
 - **guess number higher or lower**: be careful of overflow!
 
-#### `kth element`
+#### `search of answer`
 - **median of two sorted array**: binary search of `k` in the `k`th element
 - **kth smallest element in a sorted matrix**: binary search of guessed number and find its position in matrix
+- **split array largest sum**: search of largest sum since it is bounded
 
 #### `search of sum`
 - **max sum of rectangle no larger than k**: basically brute force version of 1D max sum of sub array no larger than `k`. Do a binary search to find any value > sum - k among previous sums.
@@ -98,7 +99,7 @@
 - **triangle**: DP backwards
 - **maximum product subarray**: use maximum and minimum to keep track of results. Don't use positive and negative!
 - **product of array except self**: two sweeps
-- **DP with optimization**
+- **With optimization**
     - **coin change**: `DP[i]` stores the value of minimum coins for amount `i`. Need to optimize over coins.
     - **longest increasing subsequence**: `DP[i]` stores the longest subsequence using `nums[i]`
 
@@ -106,7 +107,9 @@
 - **unique paths, unique paths II, minimum path sum, maximal square**: maintain 2D matrix
 - **dungeon game**: 2D backwards
 - **regular expression matching**: 3 cases: character before `*` used 0, 1, multiple times
-- **is subsequence**: 2D DP. Two rows are sufficient
+- **is subsequence**: 2D DP. Two rows are sufficient. Actually two pointers algorithm is sufficient.
+- **With optimization**
+    - **Split Array Largest Sum**: optimize over previous results
 
 ## Hash
 
