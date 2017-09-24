@@ -79,6 +79,7 @@
 - **first bad version**
 - **guess number higher or lower**: be careful of overflow!
 - **find right interval**
+- **arranging coins**: overflow
 
 #### `search of answer`
 - **median of two sorted array**: binary search of `k` in the `k`th element
