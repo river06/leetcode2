@@ -81,6 +81,7 @@
 - **find right interval**
 - **arranging coins**: overflow
 - **heaters**
+- **find k closest element**
 
 #### `search of answer`
 - **median of two sorted array**: binary search of `k` in the `k`th element
