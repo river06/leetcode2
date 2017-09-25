@@ -163,10 +163,11 @@
 
 ## Tree
 #### `traversal`
-- **binary tree inorder traversal**
+- **binary tree in-order traversal**
 
 #### `misc`
-- **unique binary tree I**: permutation of left and right
+- **unique binary search tree I**: permutation of left and right
+- **unique binary search tree II**: `List<TreeNode>` can add `null`
 
 ## Two pointers
 - **minimum size subarray sum**: two pointers
