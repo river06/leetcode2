@@ -165,6 +165,9 @@
 #### `traversal`
 - **binary tree in-order traversal**
 
+#### `pass min and max`
+- **validate binary search tree**: can pass down min and max. Don't have to return them. Also, be careful of minimum and maximum values of integer. 
+
 #### `misc`
 - **unique binary search tree I**: permutation of left and right
 - **unique binary search tree II**: `List<TreeNode>` can add `null`
