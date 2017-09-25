@@ -86,7 +86,7 @@
 #### `search of answer`
 - **median of two sorted array**: binary search of `k` in the `k`th element
 - **kth smallest element in a sorted matrix**: binary search of guessed number and find its position in matrix
-- **kth smallest number in multiplication table**: basically kthe smallest element in a sorted matrix. Guess the answer and binary search for it. 
+- **kth smallest number in multiplication table**: basically kthe smallest element in a sorted matrix. Guess the answer and binary search for it.
 - **split array largest sum**: search of largest sum since it is bounded
 - **smallest good base**: search of the power of the base-converted number. There is a formula for finding based given the base-converted number
 
@@ -160,6 +160,13 @@
 ## Strings
 - **word ladder**: breadth first search, use string builder and hash set
 - **word ladder II**: bfs, then dfs. Use map to track backwards path
+
+## Tree
+#### `traversal`
+- **binary tree inorder traversal**
+
+#### `misc`
+- **unique binary tree I**: permutation of left and right
 
 ## Two pointers
 - **minimum size subarray sum**: two pointers
