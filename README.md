@@ -170,6 +170,7 @@
     - **same tree**, **symmetric tree**: pre-order traversal
 - **level-order**
     - **binary tree level order traversal**: BFS using queue. Can use queue.size instead of two queues.
+    - **binary tree level order traversal II**: BFS using queue.
     - **binary tree zig-zag level order traversal**: BFS using stack.
 - **DFS misc**
     - **maximum depth of binary tree**: DFS
