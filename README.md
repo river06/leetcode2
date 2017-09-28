@@ -170,7 +170,9 @@
     - **same tree**, **symmetric tree**: pre-order traversal
 - **level-order**
     - **binary tree level order traversal**: BFS using queue. Can use queue.size instead of two queues.
-    - **binary tree zig-zag level order traversal**: BFS using stack. 
+    - **binary tree zig-zag level order traversal**: BFS using stack.
+- **DFS mis**
+    - **maximum depth of binary tree**: DFS
 
 #### `pass min and max`
 - **validate binary search tree**: can pass down min and max. Don't have to return them. Also, be careful of minimum and maximum values of integer.
