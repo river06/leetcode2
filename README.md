@@ -171,8 +171,11 @@
 - **level-order**
     - **binary tree level order traversal**: BFS using queue. Can use queue.size instead of two queues.
     - **binary tree zig-zag level order traversal**: BFS using stack.
-- **DFS mis**
+- **DFS misc**
     - **maximum depth of binary tree**: DFS
+
+#### `construct tree`
+- **construct binary tree from preorder and inorder traversal**: pre-order starts with root
 
 #### `pass min and max`
 - **validate binary search tree**: can pass down min and max. Don't have to return them. Also, be careful of minimum and maximum values of integer.
