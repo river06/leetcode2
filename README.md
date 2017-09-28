@@ -174,6 +174,7 @@
     - **binary tree zig-zag level order traversal**: BFS using stack.
 - **DFS misc**
     - **maximum depth of binary tree**: DFS
+    - **minimum depth of binary tree**: DFS. Pay attention to not leaf path
     - **balanced binary tree**: return -1 as not balanced
 
 #### `construct tree`
