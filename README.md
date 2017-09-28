@@ -164,7 +164,8 @@
 ## Tree
 #### `traversal`
 - **binary tree in-order traversal**: Morris traversal in `O(1)` space
-- **recover binary search tree**: In order traversal. Morris traversal algorithm 
+- **recover binary search tree**: In order traversal. Morris traversal algorithm
+- **same tree**: pre-order traversal
 
 #### `pass min and max`
 - **validate binary search tree**: can pass down min and max. Don't have to return them. Also, be careful of minimum and maximum values of integer.
