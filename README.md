@@ -176,6 +176,7 @@
 
 #### `construct tree`
 - **construct binary tree from preorder and inorder traversal**: pre-order starts with root
+- **construct binary tree from postorder and inorder traversal**: post-order ends with root
 
 #### `pass min and max`
 - **validate binary search tree**: can pass down min and max. Don't have to return them. Also, be careful of minimum and maximum values of integer.
