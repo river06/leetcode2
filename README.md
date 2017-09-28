@@ -182,8 +182,9 @@
 - **construct binary tree from postorder and inorder traversal**: post-order ends with root
 - **convert sorted array to BST**: use middle element as root. Remember to use tree pointers instead of recursion.
 
-#### `pass min and max`
+#### `pass down`
 - **validate binary search tree**: can pass down min and max. Don't have to return them. Also, be careful of minimum and maximum values of integer.
+- **path sum**: pay attention to not leaf paths
 
 #### `misc`
 - **unique binary search tree I**: permutation of left and right
