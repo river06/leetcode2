@@ -207,6 +207,7 @@
 #### `misc`
 - **unique binary search tree I**: permutation of left and right
 - **unique binary search tree II**: `List<TreeNode>` can add `null`
+- **lowest common ancestor of a binary search tree**: Use property of BST
 
 ## Two pointers
 - **minimum size subarray sum**: two pointers
