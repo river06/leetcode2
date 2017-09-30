@@ -168,6 +168,7 @@
     - **recover binary search tree**: In order traversal. Morris traversal algorithm
 - **pre-order**
     - **same tree**, **symmetric tree**: pre-order traversal
+    - **flatten binary tree to linked list**: not exactly pre-order traversal. Process left then right. Need to return the right most child of left and right sub trees.
 - **level-order**
     - **binary tree level order traversal**: BFS using queue. Can use queue.size instead of two queues.
     - **binary tree level order traversal II**: BFS using queue.
