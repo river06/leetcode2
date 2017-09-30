@@ -185,6 +185,7 @@
 #### `pass down`
 - **validate binary search tree**: can pass down min and max. Don't have to return them. Also, be careful of minimum and maximum values of integer.
 - **path sum**: pay attention to not leaf paths
+- **path sum II**: not all functions of LinkedList is available in List. new LinkedList<T>(oldList) can be used to clone a list.
 
 #### `misc`
 - **unique binary search tree I**: permutation of left and right
