@@ -184,10 +184,14 @@
 - **construct binary tree from postorder and inorder traversal**: post-order ends with root
 - **convert sorted array to BST**: use middle element as root. Remember to use tree pointers instead of recursion.
 
-#### `pass down`
-- **validate binary search tree**: can pass down min and max. Don't have to return them. Also, be careful of minimum and maximum values of integer.
+#### `sum`
 - **path sum**: pay attention to not leaf paths
 - **path sum II**: not all functions of LinkedList is available in List. new LinkedList<T>(oldList) can be used to clone a list.
+- **binary tree maximum path sum**: can use an array to return multiple values of the same type!
+
+#### `pass down`
+- **validate binary search tree**: can pass down min and max. Don't have to return them. Also, be careful of minimum and maximum values of integer.
+
 
 #### `misc`
 - **unique binary search tree I**: permutation of left and right
