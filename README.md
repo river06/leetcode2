@@ -193,6 +193,7 @@
     - **minimum depth of binary tree**: DFS. Pay attention to not leaf path
     - **balanced binary tree**: return -1 as not balanced
     - **count complete tree nodes**: use left depth and right depth to shortcut some calculation
+    - **invert binary tree**: BFS can also work, I think
 - **sum**
     - **path sum**: pay attention to not leaf paths
     - **path sum II**: not all functions of LinkedList is available in List. new LinkedList<T>(oldList) can be used to clone a list.
