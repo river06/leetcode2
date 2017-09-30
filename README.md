@@ -166,6 +166,7 @@
 #### `traversal`
 - **in-order**
     - **binary tree in-order traversal**: Morris traversal in `O(1)` space
+    - **binary search tree iterator**: in-order traversal using stack
     - **recover binary search tree**: In order traversal. Morris traversal algorithm
 - **pre-order**
     - **binary tree pre-order traversal**: should be able to use stack. Push root, right child, left child
