@@ -204,6 +204,7 @@
 - **pass down**
     - **validate binary search tree**: can pass down min and max. Don't have to return them. Also, be careful of minimum and maximum values of integer.
     - **sum root to leaf numbers**: pass current number down
+    - **sum of left leaves**: sum!
     - **binary tree right side view**: traverse right sub tree first and add any node whose level is larger than the maximum level so far
 
 #### `misc`
