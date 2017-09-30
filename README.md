@@ -173,7 +173,7 @@
     - **binary tree level order traversal**: BFS using queue. Can use queue.size instead of two queues.
     - **binary tree level order traversal II**: BFS using queue.
     - **binary tree zig-zag level order traversal**: BFS using stack.
-    - **populating next right pointers in each node**: very special level order traversal. Need to keep track of this level's node, and next level's last visited node. This level can be visited by using this level's node's next.
+    - **populating next right pointers in each node II and II**: very special level order traversal. Need to keep track of this level's node, and next level's last visited node. This level can be visited by using this level's node's next.
 - **DFS misc**
     - **maximum depth of binary tree**: DFS
     - **minimum depth of binary tree**: DFS. Pay attention to not leaf path
