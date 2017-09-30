@@ -208,6 +208,7 @@
 - **unique binary search tree I**: permutation of left and right
 - **unique binary search tree II**: `List<TreeNode>` can add `null`
 - **lowest common ancestor of a binary search tree**: Use property of BST
+- **lowest common ancestor of a binary tree**: return found element or common parent
 
 ## Two pointers
 - **minimum size subarray sum**: two pointers
