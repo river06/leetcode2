@@ -179,6 +179,7 @@
     - **binary tree level order traversal II**: BFS using queue.
     - **binary tree zig-zag level order traversal**: BFS using stack.
     - **populating next right pointers in each node II and II**: very special level order traversal. Need to keep track of this level's node, and next level's last visited node. This level can be visited by using this level's node's next.
+    - **binary tree right side view**: level order traversal find the last node of every level
 
 
 #### `construct tree`
@@ -198,6 +199,7 @@
 - **pass down**
     - **validate binary search tree**: can pass down min and max. Don't have to return them. Also, be careful of minimum and maximum values of integer.
     - **sum root to leaf numbers**: pass current number down
+    - **binary tree right side view**: traverse right sub tree first and add any node whose level is larger than the maximum level so far
 
 #### `misc`
 - **unique binary search tree I**: permutation of left and right
