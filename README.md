@@ -200,6 +200,7 @@
     - **path sum**: pay attention to not leaf paths
     - **path sum II**: not all functions of LinkedList is available in List. new LinkedList<T>(oldList) can be used to clone a list.
     - **binary tree maximum path sum**: can use an array to return multiple values of the same type!
+    - **house robbery III**: return two values
 - **pass down**
     - **validate binary search tree**: can pass down min and max. Don't have to return them. Also, be careful of minimum and maximum values of integer.
     - **sum root to leaf numbers**: pass current number down

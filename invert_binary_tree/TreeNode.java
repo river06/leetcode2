@@ -45,30 +45,26 @@ public class TreeNode {
 		return ret;
     }
 
-	public static TreeNode buildTree(int[] preorder, int[] inorder) {
-        // base case
-		if( preorder==null || preorder.length == 0) {
+	public static TreeNode buildTree(int[] preorder) {
+		TreeNode.idx = 0;
+		return deserialize(preorder);
+	}
+	private static int idx = 0;
+	private static TreeNode deserialize(int[] preorder) {
+		if (TreeNode.idx >= preorder.length ||
+			preorder[TreeNode.idx] == -1) {
+			TreeNode.idx ++;
 			return null;
 		}
-		int root_val = preorder[0];
-		TreeNode root = new TreeNode(root_val);
-		int root_idx = findIdx(inorder, root_val);
-		root.left = buildTree(Arrays.copyOfRange(preorder, 1, root_idx+1),
-							  Arrays.copyOfRange(inorder, 0, root_idx));
-		root.right = buildTree(Arrays.copyOfRange(preorder, root_idx+1, preorder.length),
-							   Arrays.copyOfRange(inorder, root_idx+1, inorder.length));
-		return root;
-    }
 
-	private static int findIdx(int[] array, int target) {
-		int ret = -1;
-		for(int i=0; i<array.length; i++) {
-			if(array[i] == target) {
-				ret = i;
-				break;
-			}
-		}
-		return ret;
+		TreeNode root = new TreeNode(preorder[TreeNode.idx]);
+		TreeNode.idx ++;
+
+		root.left = TreeNode.deserialize(preorder);
+		root.right = TreeNode.deserialize(preorder);
+
+		return root;
 	}
- }
+}
+			
  
