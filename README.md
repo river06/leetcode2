@@ -162,6 +162,7 @@
 - **word ladder II**: bfs, then dfs. Use map to track backwards path
 
 ## Tree
+
 #### `traversal`
 - **in-order**
     - **binary tree in-order traversal**: Morris traversal in `O(1)` space
@@ -174,24 +175,25 @@
     - **binary tree level order traversal II**: BFS using queue.
     - **binary tree zig-zag level order traversal**: BFS using stack.
     - **populating next right pointers in each node II and II**: very special level order traversal. Need to keep track of this level's node, and next level's last visited node. This level can be visited by using this level's node's next.
-- **DFS misc**
-    - **maximum depth of binary tree**: DFS
-    - **minimum depth of binary tree**: DFS. Pay attention to not leaf path
-    - **balanced binary tree**: return -1 as not balanced
+
 
 #### `construct tree`
 - **construct binary tree from preorder and inorder traversal**: pre-order starts with root
 - **construct binary tree from postorder and inorder traversal**: post-order ends with root
 - **convert sorted array to BST**: use middle element as root. Remember to use tree pointers instead of recursion.
 
-#### `sum`
-- **path sum**: pay attention to not leaf paths
-- **path sum II**: not all functions of LinkedList is available in List. new LinkedList<T>(oldList) can be used to clone a list.
-- **binary tree maximum path sum**: can use an array to return multiple values of the same type!
-
-#### `pass down`
-- **validate binary search tree**: can pass down min and max. Don't have to return them. Also, be careful of minimum and maximum values of integer.
-
+#### `DFS`
+- **MISC**
+    - **maximum depth of binary tree**: DFS
+    - **minimum depth of binary tree**: DFS. Pay attention to not leaf path
+    - **balanced binary tree**: return -1 as not balanced
+- **sum**
+    - **path sum**: pay attention to not leaf paths
+    - **path sum II**: not all functions of LinkedList is available in List. new LinkedList<T>(oldList) can be used to clone a list.
+    - **binary tree maximum path sum**: can use an array to return multiple values of the same type!
+- **pass down**
+    - **validate binary search tree**: can pass down min and max. Don't have to return them. Also, be careful of minimum and maximum values of integer.
+    - **sum root to leaf numbers**: pass current number down
 
 #### `misc`
 - **unique binary search tree I**: permutation of left and right
