@@ -199,6 +199,7 @@
 - **sum**
     - **path sum**: pay attention to not leaf paths
     - **path sum II**: not all functions of LinkedList is available in List. new LinkedList<T>(oldList) can be used to clone a list.
+    - **path sum III**: need to separate recursion with path finding logic
     - **binary tree maximum path sum**: can use an array to return multiple values of the same type!
     - **house robbery III**: return two values
 - **pass down**

@@ -1,6 +1,15 @@
+/**
+ * Definition for binary tree
+ */
+
 import java.util.*;
 
-public class TreeNodeHelper {
+public class TreeNode {
+	int val;
+	TreeNode left;
+	TreeNode right;
+	TreeNode(int x) { val = x; }
+
 	public static void printTree(TreeNode root) {
 		List<List<Integer>> tree = levelOrderTraversal(root);
 		for (List<Integer> level: tree) {
@@ -37,9 +46,25 @@ public class TreeNodeHelper {
     }
 
 	public static TreeNode buildTree(int[] preorder) {
-
+		TreeNode.idx = 0;
+		return deserialize(preorder);
 	}
+	private static int idx = 0;
+	private static TreeNode deserialize(int[] preorder) {
+		if (TreeNode.idx >= preorder.length ||
+			preorder[TreeNode.idx] == -1) {
+			TreeNode.idx ++;
+			return null;
+		}
 
-	private static TreeNode deserialize(int[] preorder, int idx) {
-		if (idx ==
+		TreeNode root = new TreeNode(preorder[TreeNode.idx]);
+		TreeNode.idx ++;
+
+		root.left = TreeNode.deserialize(preorder);
+		root.right = TreeNode.deserialize(preorder);
+
+		return root;
+	}
+}
 			
+ 
