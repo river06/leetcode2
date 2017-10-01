@@ -172,10 +172,11 @@
     - **find mode in BST**
 - **pre-order**
     - **binary tree pre-order traversal**: should be able to use stack. Push root, right child, left child
-    - **same tree**, **symmetric tree**: pre-order traversal
+    - **same tree**, **symmetric tree**, **subtree of another tree**: pre-order traversal
     - **flatten binary tree to linked list**: not exactly pre-order traversal. Process left then right. Need to return the right most child of left and right sub trees.
 - **post-order**
     - **binary tree post-order traversal**: opposite of binary tree pre-order traversal. Use two stacks. Dot graph when only one stack allowed.
+    - **construct string from binary tree**
 - **level-order**
     - **binary tree level order traversal**: BFS using queue. Can use queue.size instead of two queues.
     - **binary tree level order traversal II**: BFS using queue.
