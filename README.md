@@ -202,6 +202,7 @@
     - **count complete tree nodes**: use left depth and right depth to shortcut some calculation
     - **invert binary tree**: BFS can also work, I think
     - **binary tree path**: string builder
+    - **diameter of binary tree**: use int[] to pass two values
 - **sum**
     - **path sum**: pay attention to not leaf paths
     - **path sum II**: not all functions of LinkedList is available in List. new LinkedList<T>(oldList) can be used to clone a list.
