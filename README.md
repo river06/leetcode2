@@ -188,6 +188,9 @@
 - **construct binary tree from postorder and inorder traversal**: post-order ends with root
 - **convert sorted array to BST**: use middle element as root. Remember to use tree pointers instead of recursion.
 
+#### `delete`
+- **delete node in a BST**: Return the new root is convenient. Three cases: no child, one child, two children. Two children case can be solved by moving the value to the current root, and then do a deletion.  
+
 #### `DFS`
 - **MISC**
     - **maximum depth of binary tree**: DFS
