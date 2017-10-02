@@ -213,6 +213,7 @@
     - **most frequent subtree sum**: hash table
     - **convert BST to greater tree**
     - **binary tree tilt**
+    - **merge two binary trees**
 - **pass down**
     - **validate binary search tree**: can pass down min and max. Don't have to return them. Also, be careful of minimum and maximum values of integer.
     - **sum root to leaf numbers**: pass current number down
