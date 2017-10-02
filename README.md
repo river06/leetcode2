@@ -4,6 +4,7 @@
 #### `num sum series`
 - **two sum (number not sorted)**: hash map to store `<number, position>` pairs
 - **two sum II (sorted)**: two pointers algorithm.
+- **two sum IV**: hashset
 - **three sum**: two pointers algorithm. Use one to sweep from start to end, the other to sweep backwards
 - **three sum closest**: basically two pointers algorithm
 - **four sum**: same two pointers algorithm as three sum. Remember to skip duplicate numbers
