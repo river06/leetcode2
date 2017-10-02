@@ -185,6 +185,7 @@
     - **binary tree right side view**: level order traversal find the last node of every level
     - **find bottom left tree value**: level order
     - **find largest value in each tree row**: level order
+    - **average of levels in binary tree**
 
 
 #### `construct tree`
