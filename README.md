@@ -198,30 +198,34 @@
 #### `delete`
 - **delete node in a BST**: Return the new root is convenient. Three cases: no child, one child, two children. Two children case can be solved by moving the value to the current root, and then do a deletion.  
 
+#### `width`
+- **maximum width of binary tree**: trick is to assign 2i and 2i+1 to children
+
 #### `DFS`
-- **MISC**
-    - **maximum depth of binary tree**: DFS
-    - **minimum depth of binary tree**: DFS. Pay attention to not leaf path
-    - **balanced binary tree**: return -1 as not balanced
-    - **count complete tree nodes**: use left depth and right depth to shortcut some calculation
-    - **invert binary tree**: BFS can also work, I think
-    - **binary tree path**: string builder
-    - **diameter of binary tree**: use int[] to pass two values
-- **sum**
-    - **path sum**: pay attention to not leaf paths
-    - **path sum II**: not all functions of LinkedList is available in List. new LinkedList<T>(oldList) can be used to clone a list.
-    - **path sum III**: need to separate recursion with path finding logic
-    - **binary tree maximum path sum**: can use an array to return multiple values of the same type!
-    - **house robbery III**: return two values
-    - **most frequent subtree sum**: hash table
-    - **convert BST to greater tree**
-    - **binary tree tilt**
-    - **merge two binary trees**
-- **pass down**
-    - **validate binary search tree**: can pass down min and max. Don't have to return them. Also, be careful of minimum and maximum values of integer.
-    - **sum root to leaf numbers**: pass current number down
-    - **sum of left leaves**: sum!
-    - **binary tree right side view**: traverse right sub tree first and add any node whose level is larger than the maximum level so far
+- **maximum depth of binary tree**: DFS
+- **minimum depth of binary tree**: DFS. Pay attention to not leaf path
+- **balanced binary tree**: return -1 as not balanced
+- **count complete tree nodes**: use left depth and right depth to shortcut some calculation
+- **invert binary tree**: BFS can also work, I think
+- **binary tree path**: string builder
+- **diameter of binary tree**: use int[] to pass two values
+
+#### `sum`
+- **path sum**: pay attention to not leaf paths
+- **path sum II**: not all functions of LinkedList is available in List. new LinkedList<T>(oldList) can be sed to clone a list.
+- **path sum III**: need to separate recursion with path finding logic
+- **binary tree maximum path sum**: can use an array to return multiple values of the same type!
+- **house robbery III**: return two values
+- **most frequent subtree sum**: hash table
+- **convert BST to greater tree**
+- **binary tree tilt**
+- **merge two binary trees**
+
+#### `pass down`
+- **validate binary search tree**: can pass down min and max. Don't have to return them. Also, be careful of minimum and maximum values of integer.
+- **sum root to leaf numbers**: pass current number down
+- **sum of left leaves**: sum!
+- **binary tree right side view**: traverse right sub tree first and add any node whose level is larger than the maximum level so far
 
 #### `misc`
 - **unique binary search tree I**: permutation of left and right
