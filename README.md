@@ -201,15 +201,6 @@
 #### `width`
 - **maximum width of binary tree**: trick is to assign 2i and 2i+1 to children
 
-#### `DFS`
-- **maximum depth of binary tree**: DFS
-- **minimum depth of binary tree**: DFS. Pay attention to not leaf path
-- **balanced binary tree**: return -1 as not balanced
-- **count complete tree nodes**: use left depth and right depth to shortcut some calculation
-- **invert binary tree**: BFS can also work, I think
-- **binary tree path**: string builder
-- **diameter of binary tree**: use int[] to pass two values
-
 #### `sum`
 - **path sum**: pay attention to not leaf paths
 - **path sum II**: not all functions of LinkedList is available in List. new LinkedList<T>(oldList) can be sed to clone a list.
@@ -232,6 +223,14 @@
 - **unique binary search tree II**: `List<TreeNode>` can add `null`
 - **lowest common ancestor of a binary search tree**: Use property of BST
 - **lowest common ancestor of a binary tree**: return found element or common parent
+- **maximum depth of binary tree**: DFS
+- **minimum depth of binary tree**: DFS. Pay attention to not leaf path
+- **balanced binary tree**: return -1 as not balanced
+- **count complete tree nodes**: use left depth and right depth to shortcut some calculation
+- **invert binary tree**: BFS can also work, I think
+- **binary tree path**: string builder
+- **diameter of binary tree**: use int[] to pass two values
+- **trim a BST**
 
 ## Two pointers
 - **minimum size subarray sum**: two pointers
