@@ -197,6 +197,7 @@
 - **convert sorted array to BST**: use middle element as root. Remember to use tree pointers instead of recursion.
 - **serialization**
     - **serialize and deserialize binary tree**: pre-order or level order
+    - **serialize and deserialize binary search tree**: find divider of left and right sub-trees first
 
 #### `delete`
 - **delete node in a BST**: Return the new root is convenient. Three cases: no child, one child, two children. Two children case can be solved by moving the value to the current root, and then do a deletion.  
