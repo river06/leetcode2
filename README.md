@@ -242,7 +242,8 @@
 
 
 
-
+## System Design
+- **mini twitter `LinkedIn`**: Check if Hash map contains key before accessing the value
 
 
 ---
