@@ -246,6 +246,7 @@
 ----
 - **mini twitter**: Check if Hash map contains key before accessing the value
 - **consistent hashing**: can call set on Integer
+- **memcache**
 
 ---
 # MISC
