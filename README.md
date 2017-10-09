@@ -242,9 +242,10 @@
 
 
 
-## System Design
-- **mini twitter `LinkedIn`**: Check if Hash map contains key before accessing the value
-
+# System Design
+----
+- **mini twitter**: Check if Hash map contains key before accessing the value
+- **consistent hashing**: can call set on Integer
 
 ---
 # MISC
