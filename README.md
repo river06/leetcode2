@@ -247,6 +247,7 @@
 - **mini twitter**: Check if Hash map contains key before accessing the value
 - **consistent hashing**: can call set on Integer
 - **memcache**
+- **mini cassandra**: TreeMap is implemented by Red-black tree (balanced BST). TreeSet is implemented by TreeMap.
 
 ---
 # MISC
