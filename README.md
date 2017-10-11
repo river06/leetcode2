@@ -125,7 +125,11 @@
 
 #### `hash map`
 - **intersection of two arrays II**: hash map
-- **isomorphic strings [`LinkedIn`]**: hash map or hash table
+- **isomorphic strings `LinkedIn`**: hash map or hash table
+
+## Linked List
+#### `double linked list`
+- **LRU cache**: Map from key to double linked list
 
 ## Sort
 
