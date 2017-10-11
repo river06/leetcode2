@@ -249,6 +249,7 @@
 - **memcache**
 - **mini cassandra**: TreeMap is implemented by Red-black tree (balanced BST). TreeSet is implemented by TreeMap.
 - **tiny url**: unique ID
+- **consistent hashing II**: TreeMap for the rescue
 
 ---
 # MISC
