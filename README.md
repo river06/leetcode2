@@ -4,6 +4,8 @@
 
 #### `max sum`
 - **maximum subarray**: two pointers algorithm. Can be considered as 1D DP. There is a divide and conquer solution which is divided in three scenarios.
+- **maximum subarray II**: Divide left and right. 2 X 1D DP
+- **maximum product subarray**: use maximum and minimum to keep track of results. 1D DP.
 
 #### `num sum series`
 - **two sum (number not sorted)**: hash map to store `<number, position>` pairs
