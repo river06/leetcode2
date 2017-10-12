@@ -62,6 +62,7 @@
 - **longest consecutive sequence**: use set to get union
 - **majority element**: Moore's algorithm. Count up and down
 - **majority element II**: Moore's algorithm variation. Notice how we have to add before subtract
+- **can place flowers**: pay attention to all cases
 
 ## Backtracking
 - **subsets, word search**: backtracking
