@@ -1,6 +1,10 @@
 # leetcode note
 ----
 ## Series
+
+#### `max sum`
+- **maximum subarray**: two pointers algorithm. Can be considered as 1D DP. There is a divide and conquer solution which is divided in three scenarios.
+
 #### `num sum series`
 - **two sum (number not sorted)**: hash map to store `<number, position>` pairs
 - **two sum II (sorted)**: two pointers algorithm.
@@ -8,7 +12,7 @@
 - **three sum**: two pointers algorithm. Use one to sweep from start to end, the other to sweep backwards
 - **three sum closest**: basically two pointers algorithm
 - **four sum**: same two pointers algorithm as three sum. Remember to skip duplicate numbers
-- **four sum II**: hash map to store `<sum of elements in A, B; occurrences>` paris
+- **four sum II**: hash map to store `<sum of elements in A, B; occurrences>` pairs
 
 #### `best time to buy and sell stock series`
 - **I and II**: sweep. Consider this as 1D DP.
