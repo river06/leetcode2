@@ -137,6 +137,7 @@
 #### `hash map`
 - **intersection of two arrays II**: hash map
 - **isomorphic strings `LinkedIn`**: hash map or hash table
+- **max points on a line**: gcd works great when calculating the slope
 
 ## Linked List
 #### `double linked list`
