@@ -178,6 +178,7 @@
 
 #### `to from number`
 - **valid number**: + - e .
+- **atoi**: + - invalid number overflow. Overflow can be solved by Integer.MAX_VALUE/10 and Integer.MAX_VALUE%10
 
 #### `misc`
 - **word ladder**: breadth first search, use string builder and hash set
