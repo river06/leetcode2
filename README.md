@@ -2,7 +2,7 @@
 ----
 ## Series
 
-#### `max sum`
+#### `max sum series`
 - **maximum subarray**: two pointers algorithm. Can be considered as 1D DP. There is a divide and conquer solution which is divided in three scenarios.
 - **maximum subarray II**: Divide left and right. 2 X 1D DP
 - **maximum subarray III**: 2D DP with optimization
@@ -16,6 +16,9 @@
 - **three sum closest**: basically two pointers algorithm
 - **four sum**: same two pointers algorithm as three sum. Remember to skip duplicate numbers
 - **four sum II**: hash map to store `<sum of elements in A, B; occurrences>` pairs
+
+#### `valid series`
+
 
 #### `best time to buy and sell stock series`
 - **I and II**: sweep. Consider this as 1D DP.
@@ -172,6 +175,11 @@
 - **longest increasing subsequence**, **Russian envelope**: although these are tagged as binary search, the key idea is to keep a "stack" of visited numbers
 
 ## Strings
+
+#### `to from number`
+- **valid number**: + - e .
+
+#### `misc`
 - **word ladder**: breadth first search, use string builder and hash set
 - **word ladder II**: bfs, then dfs. Use map to track backwards path
 
