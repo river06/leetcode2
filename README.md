@@ -142,6 +142,10 @@
 #### `double linked list`
 - **LRU cache**: Map from key to double linked list
 
+## Math
+#### `overflow`
+- **Pow(x,n)**: x=0, x overflow, 1/x overflow, n min_val
+
 ## Sort
 
 #### `insertion sort`
