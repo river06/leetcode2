@@ -2,14 +2,13 @@
 ----
 ## Series
 
-> max sum series
+#### `max sum series`
 - **maximum subarray**: two pointers algorithm. Can be considered as 1D DP. There is a divide and conquer solution which is divided in three scenarios.
 - **maximum subarray II**: Divide left and right. 2 X 1D DP
 - **maximum subarray III**: 2D DP with optimization
 - **maximum product subarray**: use maximum and minimum to keep track of results. 1D DP.
 
-
-> num sum series
+#### `num sum series`
 - **two sum (number not sorted)**: hash map to store `<number, position>` pairs
 - **two sum II (sorted)**: two pointers algorithm.
 - **two sum IV**: hashset
@@ -18,22 +17,22 @@
 - **four sum**: same two pointers algorithm as three sum. Remember to skip duplicate numbers
 - **four sum II**: hash map to store `<sum of elements in A, B; occurrences>` pairs
 
-> valid series
+#### `valid series`
 - **valid number**
 
-> best time to buy and sell stock series`
+#### `best time to buy and sell stock series`
 - **I and II**: sweep. Consider this as 1D DP.
 - **III**: divide left and right, do DP twice
 - **IV**: 2D dynamic programming
 
-> intervals series
+#### `intervals series`
 - **merge interval**: In Java, use Collections.sort(), so that insert interval is unnecessary. We can add one by one.
 - **insert interval**: The first interval should be found by comparing old interval's ends with new interval's start. Condition for inserting is newInterval.end < nextInterval.start
 
-> longest series
+#### `longest series`
 - **longest substring without repeating characters**: Use hashmap to map characters to their indices.
 
-> palindrome series
+#### `palindrome series`
 - **longest palindromic substring**
     - Maximum common substring between reversed string (some tweak) - Dynamic programming
     - Dynamic programming: p(i,j) if string(i,j) is palindrome
@@ -44,23 +43,22 @@
     - KMP: Construct s + # + inv(s), and construct the prefix = suffix array
     - two pointers algorithm: use the counting property.  
 
-> stair shape stack series
+#### `stair shape stack series`
 - **largest rectangle in histogram**: increasing stack to find border, ~~left and right sweep~~, left to right sweep is enough, when decrease, current bar is right border. Upside down with container with most waster.
 - **maximal rectangle**: loop of largest rectangle in histogram
 - **container with most water**: decreasing stack to find border, left sweep is enough
 - **trapping rain water**: decreasing stack
 - **trapping rain water II**: actually BFS. Use queue to maintain spots that need to be checked again. Only check spots where water level is reduced, and their neighbors.
 
-> calculator series
+#### `calculator series`
 - **basic calculator**: solved with two stacks: one for operands one for numbers
 - **basic calculator II**: one stack with pushing `1` trick. Be careful with negative number at the beginning.
 
-> loop series
+#### `loop series`
 - **find the duplicate number**: duplicated number forms a loop. Use two pointers to find the entrance. Return index.
 
 
 ## Arrays
->    
 - **set matrix zeros**: use first row and column to keep flags
 - **search 2D matrix**: binary search
 - **search 2D matrix II**: search by corner from top right to bottom left.
@@ -70,16 +68,15 @@
 - **can place flowers**: pay attention to all cases
 
 ## Backtracking
->    
 - **subsets, word search**: backtracking
 
 ## Binary search
 
-> Bit shift
+#### `Bit shift`
 - **divide two integers**: bit shift
 - **pow(x,n)**
 
-> three pointers
+#### `three pointers`
 - **search in rotated sorted array**: use three pointers
 - **Search in Rotated Sorted Array II**: skip duplicated boundary
 - **Find Minimum in Rotated Sorted Array**
@@ -98,27 +95,25 @@
 - **heaters**
 - **find k closest element**
 
-> search of answer
+#### `search of answer`
 - **median of two sorted array**: binary search of `k` in the `k`th element
 - **kth smallest element in a sorted matrix**: binary search of guessed number and find its position in matrix
 - **kth smallest number in multiplication table**: basically kthe smallest element in a sorted matrix. Guess the answer and binary search for it.
 - **split array largest sum**: search of largest sum since it is bounded
 - **smallest good base**: search of the power of the base-converted number. There is a formula for finding based given the base-converted number
 
-> search of sum
+#### `search of sum`
 - **max sum of rectangle no larger than k**: basically brute force version of 1D max sum of sub array no larger than `k`. Do a binary search to find any value > sum - k among previous sums.
 
 ## Binary search tree
->    
 - **count complete tree nodes**
 - **kth smallest element in a BST**: in order traversal
 
 ## Divide and conquer
->  
 - **count complete tree nodes**: count left and right. Perfect tree short cut
 
 ## Dynamic programming
-> 1D dynamic programming
+#### `1D dynamic programming`
 - **triangle**: DP backwards
 - **maximum product subarray**: use maximum and minimum to keep track of results. Don't use positive and negative!
 - **product of array except self**: two sweeps
@@ -126,7 +121,7 @@
     - **coin change**: `DP[i]` stores the value of minimum coins for amount `i`. Need to optimize over coins.
     - **longest increasing subsequence**: `DP[i]` stores the longest subsequence using `nums[i]`
 
-> 2D dynamic programming
+#### `2D dynamic programming`
 - **unique paths, unique paths II, minimum path sum, maximal square**: maintain 2D matrix
 - **dungeon game**: 2D backwards
 - **regular expression matching**: 3 cases: character before `*` used 0, 1, multiple times
@@ -136,69 +131,68 @@
 
 ## Hash
 
-> hash set
+#### `hash set`
 - **intersection of two arrays**: hash set
 
-> hash map
+#### `hash map`
 - **intersection of two arrays II**: hash map
 - **isomorphic strings `LinkedIn`**: hash map or hash table
 - **max points on a line**: gcd works great when calculating the slope
 
 ## Linked List
-> double linked list
+#### `double linked list`
 - **LRU cache**: Map from key to double linked list
 
 ## Math
-> overflow
+#### `overflow`
 - **Pow(x,n)**: x=0, x overflow, 1/x overflow, n min_val
 
 ## Sort
 
-> insertion sort
+#### `insertion sort`
 - **insertion sort list**: Dummy head
 
-> counting sort
+#### `counting sort`
 
-> radix sort
+#### `radix sort`
 
-> bucket sort
+#### `bucket sort`
 - **sort colors**: Since there are only three colors, move numbers to the sides - throw 0s to the left throw 2s to the right.
 - **remove duplicates from sorted array**: bucket sort
 - **maximum gap**: buckets are of length (max-min)/(n-1), and use pigeon hole
 - **valid anagram**: alphabet buckets
 
-> quick sort
+#### `quick sort`
 - **sort list**: have to use list trick and maybe find middle?
 
-> merge sort
+#### `merge sort`
 - **sort list**: merge sort can also solve the problem
 - **merge sorted array**: merge from back to front
 - **count of smaller number after self**: merge sort can count the numbers to the right/left when merging
 
-> misc
+#### `misc`
 - **largest number**: Just sort. Use a_b and b_a to decide which comes at first
 - **wiggle sort**: sort pair by pair
 - **wiggle sort II**: Quick select algorithm to find the `k`th largest element in array. Can be used to find median. Remember to use three way partition and index mapping.
 
 ## Stack
->    
 - **stair shape series**
 - **longest increasing subsequence**, **Russian envelope**: although these are tagged as binary search, the key idea is to keep a "stack" of visited numbers
 
 ## Strings
 
-> to from number
+#### `to from number`
 - **valid number**: + - e .
 - **atoi**: + - invalid number overflow. Overflow can be solved by Integer.MAX_VALUE/10 and Integer.MAX_VALUE%10
 
-> misc
+#### `misc`
 - **word ladder**: breadth first search, use string builder and hash set
 - **word ladder II**: bfs, then dfs. Use map to track backwards path
 - **text justification**: special case: one word in a line
 
 ## Tree
 
-> traversal
+#### `traversal`
 - **in-order**
     - **binary tree in-order traversal**: Morris traversal in `O(1)` space
     - **binary search tree iterator**: in-order traversal using stack
@@ -224,7 +218,7 @@
     - **average of levels in binary tree**
 
 
-> construct tree
+#### `construct tree`
 - **construct binary tree from preorder and inorder traversal**: pre-order starts with root
 - **construct binary tree from postorder and inorder traversal**: post-order ends with root
 - **convert sorted array to BST**: use middle element as root. Remember to use tree pointers instead of recursion.
@@ -232,13 +226,13 @@
     - **serialize and deserialize binary tree**: pre-order or level order
     - **serialize and deserialize binary search tree**: find divider of left and right sub-trees first
 
-> delete
+#### `delete`
 - **delete node in a BST**: Return the new root is convenient. Three cases: no child, one child, two children. Two children case can be solved by moving the value to the current root, and then do a deletion.  
 
-> width
+#### `width`
 - **maximum width of binary tree**: trick is to assign 2i and 2i+1 to children
 
-> sum
+#### `sum`
 - **path sum**: pay attention to not leaf paths
 - **path sum II**: not all functions of LinkedList is available in List. new LinkedList<T>(oldList) can be sed to clone a list.
 - **path sum III**: need to separate recursion with path finding logic
@@ -249,13 +243,13 @@
 - **binary tree tilt**
 - **merge two binary trees**
 
-> pass down
+#### `pass down`
 - **validate binary search tree**: can pass down min and max. Don't have to return them. Also, be careful of minimum and maximum values of integer.
 - **sum root to leaf numbers**: pass current number down
 - **sum of left leaves**: sum!
 - **binary tree right side view**: traverse right sub tree first and add any node whose level is larger than the maximum level so far
 
-> misc
+#### `misc`
 - **unique binary search tree I**: permutation of left and right
 - **unique binary search tree II**: `List<TreeNode>` can add `null`
 - **lowest common ancestor of a binary search tree**: Use property of BST
@@ -270,14 +264,13 @@
 - **trim a BST**
 
 ## Two pointers
-> misc
 - **minimum size subarray sum**: two pointers
 
 
 
-----
-# System Design
 
+# System Design
+----
 - **mini twitter**: Check if Hash map contains key before accessing the value
 - **consistent hashing**: can call set on Integer
 - **memcache**
