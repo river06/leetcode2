@@ -188,6 +188,7 @@
 #### `misc`
 - **word ladder**: breadth first search, use string builder and hash set
 - **word ladder II**: bfs, then dfs. Use map to track backwards path
+- **text justification**: special case: one word in a line
 
 ## Tree
 
