@@ -18,7 +18,7 @@
 - **four sum II**: hash map to store `<sum of elements in A, B; occurrences>` pairs
 
 #### `valid series`
-
+- **valid number**
 
 #### `best time to buy and sell stock series`
 - **I and II**: sweep. Consider this as 1D DP.
@@ -27,7 +27,7 @@
 
 #### `intervals series`
 - **merge interval**: In Java, use Collections.sort(), so that insert interval is unnecessary. We can add one by one.
-- **insert interval**: The first interval should be found by comparing old interval's ends with new interval's start
+- **insert interval**: The first interval should be found by comparing old interval's ends with new interval's start. Condition for inserting is newInterval.end < nextInterval.start
 
 #### `longest series`
 - **longest substring without repeating characters**: Use hashmap to map characters to their indices.
