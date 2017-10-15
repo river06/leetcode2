@@ -194,18 +194,22 @@
 
 #### `traversal`
 - **in-order**
-    - **binary tree in-order traversal**: Morris traversal in `O(1)` space
+    - **binary tree in-order traversal**:
+        - Morris traversal in `O(1)` space.
+        - Follow dot graph using stack: root not empty: push stack and go to left; root empty: pop stack and go to pop right
     - **binary search tree iterator**: in-order traversal using stack
     - **recover binary search tree**: In order traversal. Morris traversal algorithm
     - **kth smallest number in a BST**
     - **find mode in BST**
 - **pre-order**
-    - **binary tree pre-order traversal**: should be able to use stack. Push root, right child, left child
+    - **binary tree pre-order traversal**: Stack: Push root, right child, left child
     - **same tree**, **symmetric tree**, **subtree of another tree**: pre-order traversal
     - **flatten binary tree to linked list**: not exactly pre-order traversal. Process left then right. Need to return the right most child of left and right sub trees.
     - **find duplicate subtrees**: same idea as serialize and de-serialize
 - **post-order**
-    - **binary tree post-order traversal**: opposite of binary tree pre-order traversal. Use two stacks. Dot graph when only one stack allowed.
+    - **binary tree post-order traversal**:
+        - opposite of pre-order traversal when looking backwards, use stack. Use another stack to reverse result.
+        - Follow dot graph using stack: root not null: push stack go to left; root null: (1) if stack top has right, go to that (2) pop stack, and pop all right branch 
     - **construct string from binary tree**
 - **level-order**
     - **binary tree level order traversal**: BFS using queue. Can use queue.size instead of two queues.
@@ -268,17 +272,18 @@
 
 
 
-
-# System Design
 ----
+# System Design
+
 - **mini twitter**: Check if Hash map contains key before accessing the value
 - **consistent hashing**: can call set on Integer
 - **memcache**
 - **mini cassandra**: TreeMap is implemented by Red-black tree (balanced BST). TreeSet is implemented by TreeMap.
 - **tiny url**: unique ID
 - **consistent hashing II**: TreeMap for the rescue
+- **GFS client**
 
----
+----
 # MISC
 
 - Java `int` can not be null. `Integer` is nullable. `Collection` contains `objects`.
