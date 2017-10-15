@@ -129,6 +129,10 @@
 - **With optimization**
     - **Split Array Largest Sum**: optimize over previous results
 
+## Game Theory
+#### `minimax`
+- **can I win**: can be solved with negamax algorithm since this is zero sum game. Use hash map to remember result. Can reduce from O(n!) to O(2^n)
+
 ## Hash
 
 #### `hash set`
@@ -209,7 +213,7 @@
 - **post-order**
     - **binary tree post-order traversal**:
         - opposite of pre-order traversal when looking backwards, use stack. Use another stack to reverse result.
-        - Follow dot graph using stack: root not null: push stack go to left; root null: (1) if stack top has right, go to that (2) pop stack, and pop all right branch 
+        - Follow dot graph using stack: root not null: push stack go to left; root null: (1) if stack top has right, go to that (2) pop stack, and pop all right branch
     - **construct string from binary tree**
 - **level-order**
     - **binary tree level order traversal**: BFS using queue. Can use queue.size instead of two queues.
