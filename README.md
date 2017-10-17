@@ -277,6 +277,11 @@
 - **diameter of binary tree**: use int[] to pass two values
 - **trim a BST**
 
+## Trie
+- **trie service**
+- **implement trie**
+- **trie seralization**: n node tree seralization
+
 ## Two pointers
 - **minimum size subarray sum**: two pointers
 
