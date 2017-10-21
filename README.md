@@ -54,7 +54,7 @@
 - **evaluate reverse polish notation**: stack
 - **basic calculator**: solved with two stacks: one for operands one for numbers. Can be solved with just one stack. Use number to track current number. Use result to track current result. Use 1 and -1 trick to track sign. Use stack to track parenthesis. We push result = 0 and sign = 1 for multiple consecutive parenthesis.  
 - **basic calculator II**: one stack with pushing `1` trick. Be careful with negative number at the beginning. Open a new stack when seeing "+,-", not "x,/"!
-- **expression and operators**: DFS is sufficient. Iterate through length of number. Break by operator position is enough. 
+- **expression and operators**: DFS is sufficient. Iterate through length of number. Break by operator position is enough.
 
 #### `loop series`
 - **find the duplicate number**: duplicated number forms a loop. Use two pointers to find the entrance. Return index.
@@ -71,6 +71,7 @@
 
 ## Backtracking
 - **subsets, word search**: backtracking
+- **permutations**, **permutations II**
 
 ## Binary search
 
