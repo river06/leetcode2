@@ -120,6 +120,7 @@
 - **triangle**: DP backwards
 - **maximum product subarray**: use maximum and minimum to keep track of results. Don't use positive and negative!
 - **product of array except self**: two sweeps
+- **house robber**, **house robber II**
 - **With optimization**
     - **coin change**: `DP[i]` stores the value of minimum coins for amount `i`. Need to optimize over coins.
     - **longest increasing subsequence**: `DP[i]` stores the longest subsequence using `nums[i]`
@@ -149,6 +150,9 @@
 ## Linked List
 #### `double linked list`
 - **LRU cache**: Map from key to double linked list
+
+#### `misc`
+- **merge two sorted list**
 
 ## Math
 #### `overflow`
