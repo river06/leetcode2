@@ -153,6 +153,7 @@
 
 #### `misc`
 - **merge two sorted list**
+- **merge k sorted list**: priority queue or heap
 
 ## Math
 #### `overflow`
