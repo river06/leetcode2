@@ -192,7 +192,7 @@
 ## Strings
 
 #### `substring in window`
-- **minimum window substring**: HashMap and two pointers. Two while loops: one to make solution valid/invalid, the other to make solution invalid/valid. 
+- **minimum window substring**: HashMap and two pointers. Two while loops: one to make solution valid/invalid, the other to make solution invalid/valid.
 
 #### `to from number`
 - **valid number**: + - e .
@@ -200,7 +200,7 @@
 
 #### `misc`
 - **word ladder**: breadth first search, use string builder and hash set
-- **word ladder II**: bfs, then dfs. Use map to track backwards path
+- **word ladder II**: bfs, then dfs. Use map to track backwards path. We need DFS since BFS can not backtrack. It might be too expensive to store all the possible routes. For DFS, we need a map from words to its shortest distance to start. We need a map from words to previous words.
 - **text justification**: special case: one word in a line
 
 ## Tree
