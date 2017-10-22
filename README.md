@@ -304,7 +304,7 @@
 ## Two pointers
 - **minimum size subarray sum**: two pointers
 - **sum of square numbers**
-
+- **validate palindrome**
 
 ----
 # System Design
