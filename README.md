@@ -161,6 +161,7 @@
 
 #### `prime factors`
 - **ugly number**
+- **ugly number II**: When facing with factors problems, can use multiple pointers to track factors. 
 
 ## Sort
 
