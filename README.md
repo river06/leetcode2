@@ -129,6 +129,7 @@
 #### `2D dynamic programming`
 - **unique paths, unique paths II, minimum path sum, maximal square**: maintain 2D matrix
 - **dungeon game**: 2D backwards
+- **Wildcard Matching**: 3 cases: character before `*` used 0, 1, multiple times
 - **regular expression matching**: 3 cases: character before `*` used 0, 1, multiple times
 - **is subsequence**: 2D DP. Two rows are sufficient. Actually two pointers algorithm is sufficient.
 - **With optimization**
