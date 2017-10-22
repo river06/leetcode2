@@ -160,8 +160,9 @@
 - **Pow(x,n)**: x=0, x overflow, 1/x overflow, n min_val
 
 #### `prime factors`
+- **count primes**: find a prime, remove all of none primes from it.
 - **ugly number**
-- **ugly number II**: When facing with factors problems, can use multiple pointers to track factors. 
+- **ugly number II**: When facing with factors problems, can use multiple pointers to track factors.
 
 ## Sort
 
