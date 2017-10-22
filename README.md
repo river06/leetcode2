@@ -163,6 +163,7 @@
 - **count primes**: find a prime, remove all of none primes from it.
 - **ugly number**
 - **ugly number II**: When facing with factors problems, can use multiple pointers to track factors.
+- **super ugly number**: Remember that all pointers of primes after multiplication that equal to the minimum should move forward. 
 
 ## Sort
 
