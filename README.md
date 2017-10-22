@@ -207,9 +207,10 @@
 #### `substring in window`
 - **minimum window substring**: HashMap and two pointers. Two while loops: one to make solution valid/invalid, the other to make solution invalid/valid.
 
-#### `to from number`
+#### `test of edge cases`
 - **valid number**: + - e .
 - **atoi**: + - invalid number overflow. Overflow can be solved by Integer.MAX_VALUE/10 and Integer.MAX_VALUE%10
+- **validate IP address**
 
 #### `misc`
 - **word ladder**: breadth first search, use string builder and hash set
