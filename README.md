@@ -159,6 +159,9 @@
 #### `overflow`
 - **Pow(x,n)**: x=0, x overflow, 1/x overflow, n min_val
 
+#### `prime factors`
+- **ugly number**
+
 ## Sort
 
 #### `insertion sort`
