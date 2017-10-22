@@ -121,6 +121,7 @@
 - **maximum product subarray**: use maximum and minimum to keep track of results. Don't use positive and negative!
 - **product of array except self**: two sweeps
 - **house robber**, **house robber II**
+- **valid parenthesis string**: Use two variables to track the min and max number of open parenthesis. Notice that the number of valid open parenthesis can not be less than zero.
 - **With optimization**
     - **coin change**: `DP[i]` stores the value of minimum coins for amount `i`. Need to optimize over coins.
     - **longest increasing subsequence**: `DP[i]` stores the longest subsequence using `nums[i]`
