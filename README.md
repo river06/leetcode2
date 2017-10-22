@@ -124,6 +124,7 @@
 - **With optimization**
     - **coin change**: `DP[i]` stores the value of minimum coins for amount `i`. Need to optimize over coins.
     - **longest increasing subsequence**: `DP[i]` stores the longest subsequence using `nums[i]`
+    - **perfect squares** `DP[i]` stores the number of squares for integer i
 
 #### `2D dynamic programming`
 - **unique paths, unique paths II, minimum path sum, maximal square**: maintain 2D matrix
@@ -163,7 +164,7 @@
 - **count primes**: find a prime, remove all of none primes from it.
 - **ugly number**
 - **ugly number II**: When facing with factors problems, can use multiple pointers to track factors.
-- **super ugly number**: Remember that all pointers of primes after multiplication that equal to the minimum should move forward. 
+- **super ugly number**: Remember that all pointers of primes after multiplication that equal to the minimum should move forward.
 
 ## Sort
 
