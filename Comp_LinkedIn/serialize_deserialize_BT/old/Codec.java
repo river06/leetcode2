@@ -8,50 +8,57 @@
  * }
  */
 import java.util.*;
+
 public class Codec {
 
     // Encodes a tree to a single string.
     public String serialize(TreeNode root) {
-        if (root == null) { return null; }
-		StringBuilder sb = new StringBuilder();
+		if (root == null) { return null; }
 		
-		// pre order using a stack
+        // pre-order traversal serialization
+		StringBuilder sb = new StringBuilder();
+
 		Stack<TreeNode> st = new Stack<TreeNode>();
+
 		st.push(root);
+
 		while (!st.isEmpty()) {
 			TreeNode tmp = st.pop();
+
 			if (tmp == null) {
 				sb.append("#,");
 			} else {
+				sb.append(Integer.toString(tmp.val));
+				sb.append(",");
 				st.push(tmp.right);
 				st.push(tmp.left);
-				sb.append(tmp.val + ",");
 			}
 		}
-		sb.deleteCharAt(sb.length()-1);
-		return sb.toString();
+		// remove the last comma
+		return sb.toString().substring(0, sb.length()-1);
     }
 
     // Decodes your encoded data to tree.
     public TreeNode deserialize(String data) {
-        if (data == null) { return null; }
-		String[] nodes = data.split(",");
-		int[] idx = new int[1];
-		TreeNode root = dfs(nodes, idx);
+		if (data == null) { return null; }
+		
+        String[] nodeArr = data.split(",");
+		int[] pos = new int[1];
+		TreeNode root = reconstruct(nodeArr, pos);
 		return root;
     }
 
-	private TreeNode dfs(String[] nodes, int[] idx) {
-		if (idx[0] >= nodes.length) { return null; }
-		if (nodes[idx[0]].equals("#")) {
+	private TreeNode reconstruct(String[] nodeArr, int[] pos) {
+		if (pos[0] >= nodeArr.length || nodeArr[pos[0]].equals("#")) {
 			return null;
 		}
 
-		TreeNode root = new TreeNode(Integer.parseInt(nodes[idx[0]]));
-		idx[0] += 1;
-		root.left = dfs(nodes, idx);
-		idx[0] += 1;
-		root.right = dfs(nodes, idx);
+		TreeNode root = new TreeNode(Integer.parseInt(nodeArr[pos[0]]));
+		pos[0] = pos[0] + 1;
+		root.left = reconstruct(nodeArr, pos);
+		pos[0] = pos[0] + 1;
+		root.right = reconstruct(nodeArr, pos);
+
 		return root;
 	}
 }
