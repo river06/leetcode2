@@ -7,8 +7,11 @@ public class Test {
 		//String[] words = {"a", "jjjjjjjjjjjjjjjj"};
 		//String[] words = {"jjjjjjjjjjjjjjjj"};
 		//String[] words = {"jjjjjjjjjjjjjjjj", "kkkk"};
-		String[] words = {"jjjjjjjjjjjjjjjj", "kkkk", "JJJJJJJJJJJJJJ"};
-		int n = 16;
+		//String[] words = {"jjjjjjjjjjjjjjjj", "kkkk", "JJJJJJJJJJJJJJ"};
+		
+		//int n = 16;
+		String[] words = {""};
+		int n = 0;
 		List<String> ret = solver.fullJustify(words, n);
 
 		for (String str: ret) {

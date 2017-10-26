@@ -1,19 +1,27 @@
 class Solution {
     public boolean canPlaceFlowers(int[] flowerbed, int n) {
-        boolean isInternal = false;
-		int numZero = 0;
-		int numSpot = 0;
+        if (flowerbed == null | flowerbed.length == 0) {
+			return false;
+		}
 
+		boolean isFirstOneFound = false;
+		int nZero = 0;
+		int nFlower = 0;
 		for (int i=0; i<flowerbed.length; i++) {
-			if (flowerbed[i] == 1) {
-				numSpot += isInternal ? (numZero-1)/2 : numZero/2;
-				isInternal = true;
-				numZero = 0;
+			if (flowerbed[i] == 0) {
+				nZero++;
 			} else {
-				numZero++;
+				if (!isFirstOneFound) {
+					nFlower += nZero/2;
+					isFirstOneFound = true;
+				} else {
+					nFlower += (nZero-1)/2;
+				}
+				nZero = 0;
 			}
 		}
-		numSpot += isInternal ? numZero/2 : (numZero+1)/2;
-		return numSpot >= n;
+
+		nFlower += nZero/2;
+		return nFlower>=n;
     }
 }

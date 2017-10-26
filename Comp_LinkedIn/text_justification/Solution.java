@@ -2,49 +2,54 @@ import java.util.*;
 
 class Solution {
     public List<String> fullJustify(String[] words, int maxWidth) {
-        List<String> ret = new ArrayList<String>();
-		if (words == null || words.length == 0) { return ret; }
-
-		int l = 0;
-		while (l < words.length) {
-			// process the first word
-			StringBuilder sb = new StringBuilder();
-			sb.append(words[l]);
-			int sumStrLen = words[l].length(); // sum of length of strings
-			int r = l + 1;
-			while ( r < words.length ) {
-				if (sumStrLen + words[r].length() + (r-l) > maxWidth) {
-					break;
-				} 
-				sumStrLen += words[r].length();
-				r++;
-			}
-
-			// three cases
-			if (r == words.length || r == l+1) {
-				// left align
-				for (int i=l+1; i<r; i++) {
-					sb.append( " " + words[i] );
-				}
-				while (sb.length() < maxWidth) {
-					sb.append(" ");
-				}
-			} else {
-				// justified
-				int nWhite = (maxWidth - sumStrLen) / (r - l -1);
-				for (int i=l+1; i<r; i++) {
-					if ((maxWidth-sumStrLen) % (r-l-1) >= i-l) {
-						sb.append(" ");
-					}
-					for (int k=0; k<nWhite; k++) { sb.append(" "); }
-					sb.append( words[i] );
-				}
-			}
-
-			ret.add(sb.toString());
-			l = r;
+        List<String> ret = new LinkedList<String>();
+		if (words == null || words.length == 0) {
+			return ret;
 		}
 
+		int l = 0;
+		int r = 0;
+		int lWords = 0;
+		while (r < words.length) {
+			if (lWords + words[r].length() + r-l > maxWidth) {
+				int nSpace = maxWidth - lWords;
+				int nWords = r - l;
+				StringBuilder sb = new StringBuilder();
+				sb.append(words[l]);
+				if (nWords == 1) {
+					// left align
+					for (int i=0; i<nSpace; i++) { sb.append(" "); }
+				} else {
+					for (int i=1; i<nWords; i++) {
+						int nS = nSpace / (nWords - 1);
+						if ( i <= nSpace % (nWords - 1) ) {
+							nS++;
+						}
+						for (int j=0; j<nS; j++) { sb.append(" "); }
+						sb.append(words[l+i]);
+					}
+				}
+				ret.add( sb.toString() );
+				l = r;
+				lWords = 0;
+			} else {
+				lWords += words[r].length();
+				r++;
+			}
+		}
+		StringBuilder sb = new StringBuilder();
+		for (int i=l; i<r; i++) {
+			sb.append(words[i] + " ");
+		}
+		if (sb.length() > maxWidth) {
+			sb.deleteCharAt(sb.length()-1);
+		}
+		int lsb = sb.length();
+		for (int i=0; i<maxWidth - lsb; i++) {
+			sb.append(" ");
+		}
+		ret.add(sb.toString());
 		return ret;
+				
     }
 }
