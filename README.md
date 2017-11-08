@@ -133,7 +133,7 @@
 - **Wildcard Matching**: 3 cases: character before `*` used 0, 1, multiple times
 - **regular expression matching**: 3 cases: character before `*` used 0, 1, multiple times
 - **is subsequence**: 2D DP. Two rows are sufficient. Actually two pointers algorithm is sufficient.
-- **paint house**
+- **paint house**, **paint house II**: for paint house II, we can keep track of the two minimum previous costs. 
 - **With optimization**
     - **Split Array Largest Sum**: optimize over previous results
 
