@@ -133,6 +133,7 @@
 - **Wildcard Matching**: 3 cases: character before `*` used 0, 1, multiple times
 - **regular expression matching**: 3 cases: character before `*` used 0, 1, multiple times
 - **is subsequence**: 2D DP. Two rows are sufficient. Actually two pointers algorithm is sufficient.
+- **paint house**
 - **With optimization**
     - **Split Array Largest Sum**: optimize over previous results
 
@@ -184,7 +185,11 @@
 - **valid anagram**: alphabet buckets
 
 #### `quick sort`
+- Quick sort does not need to keep track of the right indexes. In-line sort.
 - **sort list**: have to use list trick and maybe find middle?
+
+#### `quick select`
+- **k closest points**
 
 #### `merge sort`
 - **sort list**: merge sort can also solve the problem
@@ -218,7 +223,7 @@
 - **word ladder II**:
     - bfs, then dfs. Use map to track backwards path. We need DFS since BFS can not backtrack. It might be too expensive to store all the possible routes. For DFS, we need a map from words to its shortest distance to start. We need a map from words to previous words.
     - Actually, we do not need a map from words to distance. If we remove words from the dictionary when BFS, all the map from word to previous words will be on the shortest paths.
-    - We can also BFS on the paths. 
+    - We can also BFS on the paths.
 - **text justification**: special case: one word in a line
 - **zigzag conversion**: math and be careful of edge cases.
 
