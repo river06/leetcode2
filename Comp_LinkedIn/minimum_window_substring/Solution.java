@@ -1,53 +1,49 @@
-import java.util.*;
-
 class Solution {
     public String minWindow(String s, String t) {
-        if (s == null || t == null || s.length() == 0 || t.length() == 0) {
-			return "";
+        String ret = "";
+		if (s == null || t == null || s.length() == 0 || t.length() == 0) {
+			return ret;
 		}
 
-		// construct map here
-		int counter = 0;
-		int[] tMap = new int[256];
-		for (char c: t.toCharArray()) {
-			tMap[c]++;
-			counter++;
-		}
-
-		int l=0;
-		int r=0;
+		int minLength = Integer.MAX_VALUE;
 		int lRet = -1;
 		int rRet = -1;
-		int minDis = Integer.MAX_VALUE;
-			
+		int l = 0;
+		int r = 0;
+		int nLeft = t.length();
+		int[] map = new int[256];
+		for (int i=0; i<t.length(); i++) {
+			map[t.charAt(i)]++;
+		}
+		
 		char[] sArr = s.toCharArray();
-		String ret = "";
 		
 		while (r < sArr.length) {
-			// update counter and Map
-			if (tMap[sArr[r]] > 0) {
-				counter--;
+			if (map[sArr[r]] > 0) {
+				nLeft--;
 			}
-			tMap[sArr[r]]--;
-			r++;
-			
-			while (counter == 0) {
-				if (r-l < minDis) {
-					lRet = l;
+			map[sArr[r]]--;
+			if (nLeft == 0) {
+				while(l <= r) {
+					map[sArr[l]]++;
+					if (map[sArr[l]] > 0) {
+						nLeft++;
+						l++;
+						break;
+					}
+					l++;
+				}
+				int curLength = r-l+2;
+				if (curLength < minLength) {
+					lRet = l-1;
 					rRet = r;
-					minDis = r - l;
+					minLength = curLength;
 				}
-
-				if (tMap[sArr[l]] >= 0) {
-					counter++;
-				}
-				
-				tMap[sArr[l]]++;
-				l++;
 			}
+			r++;
 		}
 		if (lRet >= 0) {
-			ret = s.substring(lRet, rRet);
+			ret = s.substring(lRet, rRet+1);
 		}
 		return ret;
     }

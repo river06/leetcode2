@@ -215,7 +215,10 @@
 
 #### `misc`
 - **word ladder**: breadth first search, use string builder and hash set
-- **word ladder II**: bfs, then dfs. Use map to track backwards path. We need DFS since BFS can not backtrack. It might be too expensive to store all the possible routes. For DFS, we need a map from words to its shortest distance to start. We need a map from words to previous words.
+- **word ladder II**:
+    - bfs, then dfs. Use map to track backwards path. We need DFS since BFS can not backtrack. It might be too expensive to store all the possible routes. For DFS, we need a map from words to its shortest distance to start. We need a map from words to previous words.
+    - Actually, we do not need a map from words to distance. If we remove words from the dictionary when BFS, all the map from word to previous words will be on the shortest paths.
+    - We can also BFS on the paths. 
 - **text justification**: special case: one word in a line
 - **zigzag conversion**: math and be careful of edge cases.
 
