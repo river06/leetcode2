@@ -59,6 +59,9 @@
 #### `loop series`
 - **find the duplicate number**: duplicated number forms a loop. Use two pointers to find the entrance. Return index.
 
+#### `marker series`
+- **count primes**: find a prime, remove all of none primes from it.
+- **find the celebrity**: use the already found markers to reduce the number of new calls
 
 ## Arrays
 - **set matrix zeros**: use first row and column to keep flags
@@ -112,6 +115,10 @@
 - **count complete tree nodes**
 - **kth smallest element in a BST**: in order traversal
 
+## BFS
+- **nested list weight sum**: Use iterative BFS. (Queue)
+- **nested list weight sum II**: A good way to calculate weighted sum bottom up is to add weights in each level multiple times.
+
 ## Divide and conquer
 - **count complete tree nodes**: count left and right. Perfect tree short cut
 
@@ -133,7 +140,7 @@
 - **Wildcard Matching**: 3 cases: character before `*` used 0, 1, multiple times
 - **regular expression matching**: 3 cases: character before `*` used 0, 1, multiple times
 - **is subsequence**: 2D DP. Two rows are sufficient. Actually two pointers algorithm is sufficient.
-- **paint house**, **paint house II**: for paint house II, we can keep track of the two minimum previous costs. 
+- **paint house**, **paint house II**: for paint house II, we can keep track of the two minimum previous costs.
 - **With optimization**
     - **Split Array Largest Sum**: optimize over previous results
 
@@ -168,6 +175,9 @@
 - **ugly number**
 - **ugly number II**: When facing with factors problems, can use multiple pointers to track factors.
 - **super ugly number**: Remember that all pointers of primes after multiplication that equal to the minimum should move forward.
+
+#### `misc`
+- **sparse matrix multiplication**: row row multiplication
 
 ## Sort
 
