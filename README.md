@@ -236,6 +236,8 @@
     - We can also BFS on the paths.
 - **text justification**: special case: one word in a line
 - **zigzag conversion**: math and be careful of edge cases.
+- **shortest word distance**: two pointers
+- **shortest word distance II**: HashMap and two pointers
 
 ## Tree
 
