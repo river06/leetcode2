@@ -75,6 +75,7 @@
 ## Backtracking
 - **subsets, word search**: backtracking
 - **permutations**, **permutations II**
+- **factor combinations**: The next factor needs to be larger than previous factors
 
 ## Binary search
 
