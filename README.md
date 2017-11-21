@@ -75,6 +75,8 @@
 ## Backtracking
 - **subsets, word search**: backtracking
 - **permutations**, **permutations II**
+- **word pattern II**
+- **word break**: back tracking with memory
 
 ## Binary search
 
@@ -133,6 +135,7 @@
     - **coin change**: `DP[i]` stores the value of minimum coins for amount `i`. Need to optimize over coins.
     - **longest increasing subsequence**: `DP[i]` stores the longest subsequence using `nums[i]`
     - **perfect squares** `DP[i]` stores the number of squares for integer i
+    - **word break**: optimization
 
 #### `2D dynamic programming`
 - **unique paths, unique paths II, minimum path sum, maximal square**: maintain 2D matrix
