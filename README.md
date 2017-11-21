@@ -73,10 +73,14 @@
 - **can place flowers**: pay attention to all cases
 
 ## Backtracking
+#### `with memorization`
+- **word break**: back tracking with memory
+- **word break II**
+
+#### `misc`
 - **subsets, word search**: backtracking
 - **permutations**, **permutations II**
 - **word pattern II**
-- **word break**: back tracking with memory
 
 ## Binary search
 
@@ -136,6 +140,7 @@
     - **longest increasing subsequence**: `DP[i]` stores the longest subsequence using `nums[i]`
     - **perfect squares** `DP[i]` stores the number of squares for integer i
     - **word break**: optimization
+    - **work break II**
 
 #### `2D dynamic programming`
 - **unique paths, unique paths II, minimum path sum, maximal square**: maintain 2D matrix
