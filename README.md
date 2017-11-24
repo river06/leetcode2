@@ -81,6 +81,7 @@
 - **subsets, word search**: backtracking
 - **permutations**, **permutations II**
 - **word pattern II**
+- **sudoku solver**
 
 ## Binary search
 
