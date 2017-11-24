@@ -79,7 +79,7 @@
 
 #### `misc`
 - **subsets, word search**: backtracking
-- **permutations**, **permutations II**
+- **combination sum**, **combination sum II**, **combination sum III**, **permutations**, **permutations II**
 - **word pattern II**
 - **sudoku solver**
 
@@ -143,6 +143,7 @@
     - **perfect squares** `DP[i]` stores the number of squares for integer i
     - **word break**: optimization
     - **work break II**
+    - **combination sum IV**
 
 #### `2D dynamic programming`
 - **unique paths, unique paths II, minimum path sum, maximal square**: maintain 2D matrix
