@@ -73,9 +73,20 @@
 - **can place flowers**: pay attention to all cases
 
 ## Backtracking
+#### `with memorization`
+- **word break**: back tracking with memory
+- **word break II**
+
+#### `misc`
 - **subsets, word search**: backtracking
+<<<<<<< HEAD
 - **permutations**, **permutations II**
 - **factor combinations**: The next factor needs to be larger than previous factors
+=======
+- **combination sum**, **combination sum II**, **combination sum III**, **permutations**, **permutations II**
+- **word pattern II**
+- **sudoku solver**
+>>>>>>> 033351f36d96ad21ff74b6cc876f032376331f01
 
 ## Binary search
 
@@ -119,6 +130,7 @@
 ## BFS
 - **nested list weight sum**: Use iterative BFS. (Queue)
 - **nested list weight sum II**: A good way to calculate weighted sum bottom up is to add weights in each level multiple times.
+- **clone graph**: use a queue to clone BFS. Recursively clone DFS.
 
 ## Divide and conquer
 - **count complete tree nodes**: count left and right. Perfect tree short cut
@@ -134,6 +146,9 @@
     - **coin change**: `DP[i]` stores the value of minimum coins for amount `i`. Need to optimize over coins.
     - **longest increasing subsequence**: `DP[i]` stores the longest subsequence using `nums[i]`
     - **perfect squares** `DP[i]` stores the number of squares for integer i
+    - **word break**: optimization
+    - **work break II**
+    - **combination sum IV**
 
 #### `2D dynamic programming`
 - **unique paths, unique paths II, minimum path sum, maximal square**: maintain 2D matrix
@@ -345,3 +360,8 @@
 - Good practice to use generic forms?
     - `Set<T> foo = new HashSet<T>();`
     - `Map<Character, Integer> map = new HashMap<>();`
+- `Comparator<T> newComparator = new Comparator<T> { int compare(T a, T b) { *** } };` uses anonymous class
+- PriorityQueue can be constructed by `PriorityQueue(k, newComparator)` or just `PriorityQueue(newComparator)`
+- The size k in the constructor of priority queue does not limit the number of elements in the priority queue
+- `Collections.reverse(someCollection)` reverses the collection. It does **NOT** return the collection
+- int to char conversion does not work well with mod
