@@ -79,14 +79,11 @@
 
 #### `misc`
 - **subsets, word search**: backtracking
-<<<<<<< HEAD
 - **permutations**, **permutations II**
 - **factor combinations**: The next factor needs to be larger than previous factors
-=======
 - **combination sum**, **combination sum II**, **combination sum III**, **permutations**, **permutations II**
 - **word pattern II**
 - **sudoku solver**
->>>>>>> 033351f36d96ad21ff74b6cc876f032376331f01
 
 ## Binary search
 
@@ -149,6 +146,7 @@
     - **word break**: optimization
     - **work break II**
     - **combination sum IV**
+    - **partition equal subset sum**: knapsack problem. `DP[i][j]` represents if any subset of first `i` numbers can have sum equal to `j`.
 
 #### `2D dynamic programming`
 - **unique paths, unique paths II, minimum path sum, maximal square**: maintain 2D matrix
