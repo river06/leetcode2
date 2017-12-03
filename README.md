@@ -128,6 +128,7 @@
 - **nested list weight sum**: Use iterative BFS. (Queue)
 - **nested list weight sum II**: A good way to calculate weighted sum bottom up is to add weights in each level multiple times.
 - **clone graph**: use a queue to clone BFS. Recursively clone DFS.
+- **number of islands**: DFS can also be used to mask search result. If the original array can be modified, we can set the original array to be inverted value.
 
 ## Divide and conquer
 - **count complete tree nodes**: count left and right. Perfect tree short cut
