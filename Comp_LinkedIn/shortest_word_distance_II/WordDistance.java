@@ -1,43 +1,38 @@
 import java.util.*;
 class WordDistance {
-	Map<String, List<Integer>> word2Idx;
 
+    /* properties */
+    Map<String, List<Integer>> word2Index = null;
+    
     public WordDistance(String[] words) {
-        word2Idx = new HashMap<String, List<Integer>>();
-		for (int i=0; i<words.length; i++) {
-			String word = words[i];
-			if (!word2Idx.containsKey(word)) {
-				word2Idx.put(word, new LinkedList<Integer>());
-			}
-			word2Idx.get(word).add(i);
-		}
+        word2Index = new HashMap<String, List<Integer>>();
+        for (int i=0; i<words.length; i++) {
+            String word = words[i];
+            if (!word2Index.containsKey(word)) {
+                word2Index.put(word, new ArrayList<Integer>());
+            }
+            word2Index.get(word).add(i);
+        }
     }
     
     public int shortest(String word1, String word2) {
-        List<Integer> idx1 = word2Idx.get(word1);
-		List<Integer> idx2 = word2Idx.get(word2);
-
-		int ret = Integer.MAX_VALUE;
-		int i = 0;
-		int j = 0;
-
-		while (i < idx1.size() && j < idx2.size()) {
-			int p1 = idx1.get(i);
-			int p2 = idx2.get(j);
+        List<Integer> list1 = word2Index.get(word1);
+        List<Integer> list2 = word2Index.get(word2);
+        int minDist = Integer.MAX_VALUE;
+        int idx1 = 0;
+        int idx2 = 0;
+        
+        while (idx1 < list1.size() && idx2 < list2.size()) {
+            int p1 = list1.get(idx1);
+			int p2 = list2.get(idx2);
 			if (p1 < p2) {
-				ret = Math.min(ret, p2 - p1);
-				i++;
-			} else {
-				ret = Math.min(ret, p1 - p2);
-				j++;
-			}
-		}
-		return ret;
+                minDist = Math.min(minDist, p2-p1);
+                idx1++;
+            } else {
+                minDist = Math.min(minDist, p1-p2);
+                idx2++;
+            }
+        }
+        return minDist;
     }
 }
-
-/**
- * Your WordDistance object will be instantiated and called as such:
- * WordDistance obj = new WordDistance(words);
- * int param_1 = obj.shortest(word1,word2);
- */

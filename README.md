@@ -358,8 +358,15 @@
 - Good practice to use generic forms?
     - `Set<T> foo = new HashSet<T>();`
     - `Map<Character, Integer> map = new HashMap<>();`
-- `Comparator<T> newComparator = new Comparator<T> { int compare(T a, T b) { *** } };` uses anonymous class
-- PriorityQueue can be constructed by `PriorityQueue(k, newComparator)` or just `PriorityQueue(newComparator)`
-- The size k in the constructor of priority queue does not limit the number of elements in the priority queue
+- `Comparator<T> newComparator = new Comparator<T> { public int compare(T a, T b) { *** } };` uses anonymous class
+- `Queue`
+    - `Queue` supports `addAll(List list)`
+- `StringBuilder`
+    - `StringBuilder.length()`
+    - `StringBuilder.setCharAt(int i, char c)`
+- `PriorityQueue`
+    - `PriorityQueue` can be constructed by `PriorityQueue(k, newComparator)` or just `PriorityQueue(newComparator)`
+    - The size `k` in the constructor of priority queue does not limit the number of elements in the priority queue
+    - Can call `queue.remove(element)` on a priority queue
 - `Collections.reverse(someCollection)` reverses the collection. It does **NOT** return the collection
 - int to char conversion does not work well with mod
