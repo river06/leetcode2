@@ -33,11 +33,6 @@
 - **longest substring without repeating characters**: Use hashmap to map characters to their indices.
 
 #### `palindrome series`
-- **longest palindromic substring**
-    - `Manacher algorithm`   
-        - This needs inserting special character between original characters. It makes the algorithm much easier to understand. The special characters are also inserted in the edges. The length of half of the palindrome is the length of the original palindrome.
-    - Expand around center: be careful of even length palindrome. Just call the expand function twice, it is much easier than inserting special character between original characters.
-    - Dynamic programming: `dp(i,j)` if string(i,j) is palindrome. `dp(i,j)` depends on `dp(i+1, j-1)`, so fill up the matrix backwards in `i` direction and forwards in `j` direction.
 - **shortest palindrome**
     - This is essentially to find longest palindrome from the start
     - `KMP`: Construct s + # + inv(s), and construct the prefix = suffix array
@@ -46,7 +41,13 @@
         - Build the lookup table for the target string!
     - brutal force: reverse the string and compare the beginning and end
     - two pointers algorithm: use the counting property to find the length of the longest palindrome.
+- **longest palindromic substring**
+    - `Manacher algorithm`   
+        - This needs inserting special character between original characters. It makes the algorithm much easier to understand. The special characters are also inserted in the edges. The length of half of the palindrome is the length of the original palindrome.
+    - Expand around center: be careful of even length palindrome. Just call the expand function twice, it is much easier than inserting special character between original characters.
+    - Dynamic programming: `dp(i,j)` if string(i,j) is palindrome. `dp(i,j)` depends on `dp(i+1, j-1)`, so fill up the matrix backwards in `i` direction and forwards in `j` direction.
 - **palindrome partitioning**: my solution is DP plus backtracking
+- **palindrome partitioning II**: my solution uses two DP, but they can be combined into one if the iteration sequence is the same.
 - **misc**
     - **palindrome number**: invert half the number to avoid overflow
     - **valid palindrome**: just be careful of special cases
