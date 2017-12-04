@@ -34,14 +34,21 @@
 
 #### `palindrome series`
 - **longest palindromic substring**
-    - Maximum common substring between reversed string (some tweak) - Dynamic programming
-    - Dynamic programming: p(i,j) if string(i,j) is palindrome
-    - Expand around center: be careful of even length palindrome
-    - Manacher algorithm
+    - `Manacher algorithm`   
+        - This needs inserting special character between original characters. It makes the algorithm much easier to understand. The special characters are also inserted in the edges. The length of half of the palindrome is the length of the original palindrome.
+    - Expand around center: be careful of even length palindrome. Just call the expand function twice, it is much easier than inserting special character between original characters.
+    - Dynamic programming: `dp(i,j)` if string(i,j) is palindrome. `dp(i,j)` depends on `dp(i+1, j-1)`, so fill up the matrix backwards in `i` direction and forwards in `j` direction.
 - **shortest palindrome**
+    - This is essentially to find longest palindrome from the start
+    - `KMP`: Construct s + # + inv(s), and construct the prefix = suffix array
+        - KMP is a string matching algorithm.
+        - Lookup table is the longest prefix equals to suffix in the substring (0, i), i = 0 to string length.
+        - Build the lookup table for the target string!
     - brutal force: reverse the string and compare the beginning and end
-    - KMP: Construct s + # + inv(s), and construct the prefix = suffix array
-    - two pointers algorithm: use the counting property.  
+    - two pointers algorithm: use the counting property to find the length of the longest palindrome.
+- **misc**
+    - **palindrome number**: invert half the number to avoid overflow
+    - **valid palindrome**: just be careful of special cases
 
 #### `stair shape stack series`
 - **largest rectangle in histogram**: increasing stack to find border, ~~left and right sweep~~, left to right sweep is enough, when decrease, current bar is right border. Upside down with container with most waster.
@@ -162,6 +169,10 @@
 ## Game Theory
 #### `minimax`
 - **can I win**: can be solved with negamax algorithm since this is zero sum game. Use hash map to remember result. Can reduce from O(n!) to O(2^n)
+
+## Graph
+#### `union find`
+- **number of islands**, **number of islands II**
 
 ## Hash
 

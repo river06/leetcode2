@@ -4,7 +4,8 @@ public class Test {
 		Solution solver = new Solution();
 		// String s = "babad";
 		// String s = "cbbbd";
-		String s = "cbbd";
+		//String s = "cbbd";
+		String s = "a";
 		String ret = solver.longestPalindrome(s);
 		System.out.println(ret);
 	}
