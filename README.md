@@ -46,6 +46,7 @@
         - Build the lookup table for the target string!
     - brutal force: reverse the string and compare the beginning and end
     - two pointers algorithm: use the counting property to find the length of the longest palindrome.
+- **palindrome partitioning**: my solution is DP plus backtracking
 - **misc**
     - **palindrome number**: invert half the number to avoid overflow
     - **valid palindrome**: just be careful of special cases
