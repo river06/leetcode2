@@ -86,6 +86,9 @@
 - **word break**: back tracking with memory
 - **word break II**
 
+#### `wit reset`
+- **partition to k equal sum subsets**: reset the problem when one set is equal to target
+
 #### `misc`
 - **subsets, word search**: backtracking
 - **permutations**, **permutations II**
