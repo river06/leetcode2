@@ -3,48 +3,32 @@
 
 public class Solution extends Relation {
     public int findCelebrity(int n) {
-        // mat[i][j] = 1: i knows j; -1 i does not know j; 0 no judgement yet
-		int[][] mat = new int[n][n];
+        if (n <= 0) { return -1; }
+        
+        // find end of any path
+        boolean[] isNotCelebrity = new boolean[n];
+        int candidate = 0;
+        while (true) {
+            boolean isFound = true;
+            for (int i=0; i<n; i++) {
+                if (i != candidate && !isNotCelebrity[i] && knows(candidate, i)) {
+                    candidate = i;
+                    isNotCelebrity[candidate] = true;
+                    isFound = false;
+                    break;
+                }
+            }
+            if (isFound) { break; }
+        }
 
-		for (int i=0; i<n; i++) {
-			boolean isCelebrity = true;
+        // determine if the guy is the celebrity
+        for (int i=0; i<n; i++) {
 			
-			// judge if anyone does not know me based on previous results
-			// judge if I already know any one based on previous results
-			for (int j=0; j<i; j++) {
-				if (mat[i][j] == 1 || mat[j][i] == -1) {
-					isCelebrity = false;
-					break;
-				}
+            if (i!=candidate && (knows(candidate, i) || !knows(i, candidate))) {
+				return -1;
 			}
-			if (!isCelebrity) { continue; }
-
-			// judge if anyone does not know me
-			for (int j=0; j<n; j++) {
-				if (j != i && mat[j][i] == 0) {
-					mat[j][i] = knows(j, i) ? 1 : -1;
-					if (mat[j][i] == -1) {
-						isCelebrity = false;
-						break;
-					}
-				}
-			}
-			if (!isCelebrity) { continue; }
-
-            // judge if I already know any one
-			for (int j=0; j<n; j++) {
-				if (j != i && mat[i][j] == 0) {
-					mat[i][j] = knows(i, j) ? 1 : -1;
-					if (mat[i][j] == 1) {
-						isCelebrity = false;
-						break;
-					}
-				}
-			}
-
-			if (isCelebrity) { return i; }
-		}
-
-		return -1;
+        }
+        
+        return candidate;
     }
 }

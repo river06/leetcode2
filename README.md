@@ -72,6 +72,9 @@
 - **count primes**: find a prime, remove all of none primes from it.
 - **find the celebrity**: use the already found markers to reduce the number of new calls
 
+#### `minimum/maximum window series`
+- **minimum window substring**: HashMap and two pointers. Two while loops: one to make solution valid/invalid, the other to make solution invalid/valid. Condition on **counter**.
+
 ## Arrays
 - **set matrix zeros**: use first row and column to keep flags
 - **search 2D matrix**: binary search
@@ -250,9 +253,6 @@
 
 
 ## Strings
-
-#### `substring in window`
-- **minimum window substring**: HashMap and two pointers. Two while loops: one to make solution valid/invalid, the other to make solution invalid/valid.
 
 #### `test of edge cases`
 - **valid number**: + - e .
