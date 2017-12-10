@@ -58,6 +58,7 @@
 - **container with most water**: decreasing stack to find border, left sweep is enough
 - **trapping rain water**: decreasing stack
 - **trapping rain water II**: actually BFS. Use queue to maintain spots that need to be checked again. Only check spots where water level is reduced, and their neighbors.
+- **sliding window maximum**: this problem uses `deque`, but the idea is the same: keep a decreasing sequence of indexes 
 
 #### `calculator series`
 - **evaluate reverse polish notation**: stack
