@@ -74,6 +74,8 @@
 
 #### `minimum/maximum window series`
 - **minimum window substring**: HashMap and two pointers. Two while loops: one to make solution valid/invalid, the other to make solution invalid/valid. Condition on **counter**.
+- **minimum size subarray sum**
+- **permutation in string**
 
 ## Arrays
 - **set matrix zeros**: use first row and column to keep flags

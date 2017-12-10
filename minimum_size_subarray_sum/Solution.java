@@ -1,26 +1,24 @@
 class Solution {
     public int minSubArrayLen(int s, int[] nums) {
-        // Two pointers algorithm !!!
+        int sum = 0;
+		int minLength = 0;
+		int l = 0;
+		int r = 0;
 
-		if (nums == null || nums.length == 0) { return 0; }
+		while (r < nums.length) {
+			sum += nums[r];
 
-		int pl = 0;
-		int pr = 0;
-		int sum = nums[0];
-		int length = 0;
-		while (pl <= pr) {
-			if (sum >= s) {
-				int curLength = pr - pl + 1;
-				length = length == 0 ? curLength : Math.min(length, curLength);
-				sum -= nums[pl];
-				pl ++;
-			} else {
-				pr ++;
-				if (pr >= nums.length) { break; }
-				sum += nums[pr];
+			while (sum >= s) {
+				if (minLength == 0 || r-l+1 < minLength) {
+					minLength = r-l+1;
+				}
+
+				sum -= nums[l];
+				l++;
 			}
+			r++;
 		}
 
-		return length;
-	}
+		return minLength;
+    }
 }
