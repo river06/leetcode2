@@ -58,7 +58,7 @@
 - **container with most water**: decreasing stack to find border, left sweep is enough
 - **trapping rain water**: decreasing stack
 - **trapping rain water II**: actually BFS. Use queue to maintain spots that need to be checked again. Only check spots where water level is reduced, and their neighbors.
-- **sliding window maximum**: this problem uses `deque`, but the idea is the same: keep a decreasing sequence of indexes 
+- **sliding window maximum**: this problem uses `deque`, but the idea is the same: keep a decreasing sequence of indexes
 
 #### `calculator series`
 - **evaluate reverse polish notation**: stack
@@ -203,6 +203,7 @@
 #### `misc`
 - **merge two sorted list**
 - **merge k sorted list**: priority queue or heap
+- **smallest range**: priority queue
 
 ## Math
 #### `overflow`
@@ -380,6 +381,7 @@
     - `Set<T> foo = new HashSet<T>();`
     - `Map<Character, Integer> map = new HashMap<>();`
 - `Comparator<T> newComparator = new Comparator<T> { public int compare(T a, T b) { *** } };` uses anonymous class
+- A class should extend `comparable<T>` interface to be comparable. implements `int compareTo(T object)`
 - `Queue`
     - `Queue` supports `addAll(List list)`
 - `StringBuilder`
@@ -391,3 +393,4 @@
     - Can call `queue.remove(element)` on a priority queue
 - `Collections.reverse(someCollection)` reverses the collection. It does **NOT** return the collection
 - int to char conversion does not work well with mod
+- Convert array to list: `Arrays.asList(1,3,3)` or `Arrays.asList(new Integer[] {1, 2, 3})`
