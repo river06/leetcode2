@@ -175,6 +175,7 @@
 - **regular expression matching**: 3 cases: character before `*` used 0, 1, multiple times
 - **is subsequence**: 2D DP. Two rows are sufficient. Actually two pointers algorithm is sufficient.
 - **paint house**, **paint house II**: for paint house II, we can keep track of the two minimum previous costs.
+- **minimum window subsequence**: DP does not give the direct solution. When getting the leftmost element, we can use DP to get the normal answer and then loop through the DP results. 
 - **With optimization**
     - **Split Array Largest Sum**: optimize over previous results
 
