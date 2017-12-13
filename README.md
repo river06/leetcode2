@@ -14,8 +14,10 @@
 - **two sum IV**: hashset
 - **three sum**: two pointers algorithm. Use one to sweep from start to end, the other to sweep backwards
 - **three sum closest**: basically two pointers algorithm
+- **three sum smaller**: get the number of pairs by considering the right boundary (fixing the middle pointer)
 - **four sum**: same two pointers algorithm as three sum. Remember to skip duplicate numbers
 - **four sum II**: hash map to store `<sum of elements in A, B; occurrences>` pairs
+- **subarray sum equals k**: Hashmap from accumulative sum to occurrences. Calculate then put sum into hashmap. 
 
 #### `valid series`
 - **valid number**
@@ -175,7 +177,7 @@
 - **regular expression matching**: 3 cases: character before `*` used 0, 1, multiple times
 - **is subsequence**: 2D DP. Two rows are sufficient. Actually two pointers algorithm is sufficient.
 - **paint house**, **paint house II**: for paint house II, we can keep track of the two minimum previous costs.
-- **minimum window subsequence**: DP does not give the direct solution. When getting the leftmost element, we can use DP to get the normal answer and then loop through the DP results. 
+- **minimum window subsequence**: DP does not give the direct solution. When getting the leftmost element, we can use DP to get the normal answer and then loop through the DP results.
 - **With optimization**
     - **Split Array Largest Sum**: optimize over previous results
 
