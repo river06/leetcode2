@@ -17,7 +17,7 @@
 - **three sum smaller**: get the number of pairs by considering the right boundary (fixing the middle pointer)
 - **four sum**: same two pointers algorithm as three sum. Remember to skip duplicate numbers
 - **four sum II**: hash map to store `<sum of elements in A, B; occurrences>` pairs
-- **subarray sum equals k**: Hashmap from accumulative sum to occurrences. Calculate then put sum into hashmap. 
+- **subarray sum equals k**: Hashmap from accumulative sum to occurrences. Calculate then put sum into hashmap.
 
 #### `valid series`
 - **valid number**
@@ -53,6 +53,8 @@
 - **misc**
     - **palindrome number**: invert half the number to avoid overflow
     - **valid palindrome**: just be careful of special cases
+    - **palindrome linked list**: reverse linked list
+    - **palindrome permutation**: count number algorithm
 
 #### `stair shape stack series`
 - **largest rectangle in histogram**: increasing stack to find border, ~~left and right sweep~~, left to right sweep is enough, when decrease, current bar is right border. Upside down with container with most waster.
