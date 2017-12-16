@@ -56,6 +56,7 @@
     - **palindrome linked list**: reverse linked list
     - **palindrome permutation**: count number algorithm
     - **palindrome permutation II**: should still use the old way of backtracking
+    - **palindrome pairs**: special cases: empty string, palindrome itself, find whole reverted string.
 
 #### `stair shape stack series`
 - **largest rectangle in histogram**: increasing stack to find border, ~~left and right sweep~~, left to right sweep is enough, when decrease, current bar is right border. Upside down with container with most waster.
