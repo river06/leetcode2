@@ -35,21 +35,24 @@
 - **longest substring without repeating characters**: Use hashmap to map characters to their indices.
 
 #### `palindrome series`
-- **shortest palindrome**
-    - This is essentially to find longest palindrome from the start
-    - `KMP`: Construct s + # + inv(s), and construct the prefix = suffix array
-        - KMP is a string matching algorithm.
-        - Lookup table is the longest prefix equals to suffix in the substring (0, i), i = 0 to string length.
-        - Build the lookup table for the target string!
-    - brutal force: reverse the string and compare the beginning and end
-    - two pointers algorithm: use the counting property to find the length of the longest palindrome.
-- **longest palindromic substring**
-    - `Manacher algorithm`   
-        - This needs inserting special character between original characters. It makes the algorithm much easier to understand. The special characters are also inserted in the edges. The length of half of the palindrome is the length of the original palindrome.
-    - Expand around center: be careful of even length palindrome. Just call the expand function twice, it is much easier than inserting special character between original characters.
-    - Dynamic programming: `dp(i,j)` if string(i,j) is palindrome. `dp(i,j)` depends on `dp(i+1, j-1)`, so fill up the matrix backwards in `i` direction and forwards in `j` direction.
-- **palindrome partitioning**: my solution is DP plus backtracking
-- **palindrome partitioning II**: my solution uses two DP, but they can be combined into one if the iteration sequence is the same.
+- **two pointers**
+    - **shortest palindrome**
+        - This is essentially to find longest palindrome from the start
+        - `KMP`: Construct s + # + inv(s), and construct the prefix = suffix array
+            - KMP is a string matching algorithm.
+            - Lookup table is the longest prefix equals to suffix in the substring (0, i), i = 0 to string length.
+            - Build the lookup table for the target string!
+        - brutal force: reverse the string and compare the beginning and end
+        - two pointers algorithm: use the counting property to find the length of the longest palindrome.
+- **dynamic programming** - `DP(i,j)` if `string(i,j)` is palindrome or the length
+    - **longest palindromic substring**
+        - `Manacher algorithm`   
+            - This needs inserting special character between original characters. It makes the algorithm much easier to understand. The special characters are also inserted in the edges. The length of half of the palindrome is the length of the original palindrome.
+        - Expand around center: be careful of even length palindrome. Just call the expand function twice, it is much easier than inserting special character between original characters.
+        - Dynamic programming: `dp(i,j)` if string(i,j) is palindrome. `dp(i,j)` depends on `dp(i+1, j-1)`, so fill up the matrix backwards in `i` direction and forwards in `j` direction.
+    - **palindrome partitioning**: my solution is DP plus backtracking
+    - **palindrome partitioning II**: my solution uses two DP, but they can be combined into one if the iteration sequence is the same.
+    - **longest palindrome subsequence**: `DP(i,j)` stores the maximum length of palindromic substring  
 - **misc**
     - **palindrome number**: invert half the number to avoid overflow
     - **valid palindrome**: just be careful of special cases
@@ -58,7 +61,7 @@
     - **palindrome permutation II**: should still use the old way of backtracking
     - **palindrome pairs**: special cases: empty string, palindrome itself, find whole reverted string.
     - **longest palindrome**: count
-    - **largest palindrome product**: this is a math problem. For n digits, the product is at most `10^2n - 2*10^n + 1`, which means that the left part is at most `10^n - 3`. The product is at least `10^(2n-2)`, which means that the left part is at least `10^(n-1)`. 
+    - **largest palindrome product**: this is a math problem. For n digits, the product is at most `10^2n - 2*10^n + 1`, which means that the left part is at most `10^n - 3`. The product is at least `10^(2n-2)`, which means that the left part is at least `10^(n-1)`.
 
 #### `stair shape stack series`
 - **largest rectangle in histogram**: increasing stack to find border, ~~left and right sweep~~, left to right sweep is enough, when decrease, current bar is right border. Upside down with container with most waster.
