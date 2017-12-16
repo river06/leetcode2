@@ -52,7 +52,8 @@
         - Dynamic programming: `dp(i,j)` if string(i,j) is palindrome. `dp(i,j)` depends on `dp(i+1, j-1)`, so fill up the matrix backwards in `i` direction and forwards in `j` direction.
     - **palindrome partitioning**: my solution is DP plus backtracking
     - **palindrome partitioning II**: my solution uses two DP, but they can be combined into one if the iteration sequence is the same.
-    - **longest palindrome subsequence**: `DP(i,j)` stores the maximum length of palindromic substring  
+    - **longest palindrome subsequence**: `DP(i,j)` stores the maximum length of palindromic substring
+    - **count different palindromic subsequences**: can use 3D DP to solve the problem 
 - **misc**
     - **palindrome number**: invert half the number to avoid overflow
     - **valid palindrome**: just be careful of special cases
