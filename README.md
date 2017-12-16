@@ -62,6 +62,7 @@
     - **palindrome pairs**: special cases: empty string, palindrome itself, find whole reverted string.
     - **longest palindrome**: count
     - **largest palindrome product**: this is a math problem. For n digits, the product is at most `10^2n - 2*10^n + 1`, which means that the left part is at most `10^n - 3`. The product is at least `10^(2n-2)`, which means that the left part is at least `10^(n-1)`.
+    - **find the closest palindrome**: a math problem. The trick is to zero out the right part of the original number. Add 1 to the middle number or subtract 1 from the zero-out number.
 
 #### `stair shape stack series`
 - **largest rectangle in histogram**: increasing stack to find border, ~~left and right sweep~~, left to right sweep is enough, when decrease, current bar is right border. Upside down with container with most waster.
