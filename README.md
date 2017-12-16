@@ -57,7 +57,8 @@
     - **palindrome permutation**: count number algorithm
     - **palindrome permutation II**: should still use the old way of backtracking
     - **palindrome pairs**: special cases: empty string, palindrome itself, find whole reverted string.
-    - **longest palindrome**: count 
+    - **longest palindrome**: count
+    - **largest palindrome product**: this is a math problem. For n digits, the product is at most `10^2n - 2*10^n + 1`, which means that the left part is at most `10^n - 3`. The product is at least `10^(2n-2)`, which means that the left part is at least `10^(n-1)`. 
 
 #### `stair shape stack series`
 - **largest rectangle in histogram**: increasing stack to find border, ~~left and right sweep~~, left to right sweep is enough, when decrease, current bar is right border. Upside down with container with most waster.
