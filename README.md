@@ -53,7 +53,7 @@
     - **palindrome partitioning**: my solution is DP plus backtracking
     - **palindrome partitioning II**: my solution uses two DP, but they can be combined into one if the iteration sequence is the same.
     - **longest palindrome subsequence**: `DP(i,j)` stores the maximum length of palindromic substring
-    - **count different palindromic subsequences**: can use 3D DP to solve the problem 
+    - **count different palindromic subsequences**: can use 3D DP to solve the problem
 - **misc**
     - **palindrome number**: invert half the number to avoid overflow
     - **valid palindrome**: just be careful of special cases
@@ -100,6 +100,7 @@
 - **majority element**: Moore's algorithm. Count up and down
 - **majority element II**: Moore's algorithm variation. Notice how we have to add before subtract
 - **can place flowers**: pay attention to all cases
+- **task scheduler**: count idle time by filling up the gaps
 
 ## Backtracking
 #### `with memorization`
