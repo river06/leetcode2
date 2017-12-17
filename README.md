@@ -92,6 +92,9 @@
 - **permutation in string**
 - **Substring with Concatenation of All Words**
 
+#### `parenthesis series`
+- **valid parentheses**: stack
+
 ## Arrays
 - **set matrix zeros**: use first row and column to keep flags
 - **search 2D matrix**: binary search
@@ -399,12 +402,14 @@
     - `Set<T> foo = new HashSet<T>();`
     - `Map<Character, Integer> map = new HashMap<>();`
 - `Comparator<T> newComparator = new Comparator<T> { public int compare(T a, T b) { *** } };` uses anonymous class
-- A class should extend `comparable<T>` interface to be comparable. implements `int compareTo(T object)`
-- `Queue`
-    - `Queue` supports `addAll(List list)`
+- A class should extend `Comparable<T>` interface to be comparable. implements `int compareTo(T object)`
 - `StringBuilder`
     - `StringBuilder.length()`
     - `StringBuilder.setCharAt(int i, char c)`
+- `Queue`
+    - `Queue` supports `addAll(List list)`
+- `Stack`
+    - `peek(), pop()` throws `EmptyStackException` when used on an empty stack
 - `PriorityQueue`
     - `PriorityQueue` can be constructed by `PriorityQueue(k, newComparator)` or just `PriorityQueue(newComparator)`
     - The size `k` in the constructor of priority queue does not limit the number of elements in the priority queue
