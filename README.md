@@ -100,7 +100,10 @@
 - **majority element**: Moore's algorithm. Count up and down
 - **majority element II**: Moore's algorithm variation. Notice how we have to add before subtract
 - **can place flowers**: pay attention to all cases
+
+#### `task schedule`
 - **task scheduler**: count idle time by filling up the gaps
+- **rearrange string k distance apart**: can also use the same idea
 
 ## Backtracking
 #### `with memorization`
