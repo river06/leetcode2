@@ -93,12 +93,15 @@
 - **Substring with Concatenation of All Words**
 
 #### `parenthesis series`
-- **valid parentheses**: stack
+- **valid parentheses**: stack or counter
 - **generate parentheses**: backtracking
 - **longest valid parentheses**:
     - dynamic programming: discuss when last one is ( or )
     - stack: keep track of last invalid position before the valid substrings
     - two points: number of left should be greater than number of right. Otherwise reset.
+- **remove invalid parentheses**:
+    - DFS: don't try to remove the close parenthesis that has been removed. Don't remove consecutive open parentheses.
+    - BFS: kind of brute force. Need to generate all possible combinations. 
 
 ## Arrays
 - **set matrix zeros**: use first row and column to keep flags
