@@ -94,6 +94,7 @@
 
 #### `parenthesis series`
 - **valid parentheses**: stack or counter
+- **valid parentheses string**: greedy algorithm. keep track of lower bound and upper bound of open parenthesis.
 - **generate parentheses**: backtracking
 - **longest valid parentheses**:
     - dynamic programming: discuss when last one is ( or )
@@ -101,7 +102,8 @@
     - two points: number of left should be greater than number of right. Otherwise reset.
 - **remove invalid parentheses**:
     - DFS: don't try to remove the close parenthesis that has been removed. Don't remove consecutive open parentheses.
-    - BFS: kind of brute force. Need to generate all possible combinations. 
+    - BFS: kind of brute force. Need to generate all possible combinations.
+- **different ways to add parentheses**: divide and conquer is one way
 
 ## Arrays
 - **set matrix zeros**: use first row and column to keep flags
