@@ -94,6 +94,11 @@
 
 #### `parenthesis series`
 - **valid parentheses**: stack
+- **generate parentheses**: backtracking
+- **longest valid parentheses**:
+    - dynamic programming: discuss when last one is ( or )
+    - stack: keep track of last invalid position before the valid substrings
+    - two points: number of left should be greater than number of right. Otherwise reset.
 
 ## Arrays
 - **set matrix zeros**: use first row and column to keep flags
