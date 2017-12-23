@@ -15,17 +15,20 @@ class Solution {
 			uf.union(edge[0], edge[1]);
 		}
 
-		return true;
+		return (uf.counter == 1);
     }
 
 	class UnionFind {
 		int[] parent;
+		int counter;
 		UnionFind (int n) {
 			this.parent = new int[n];
+			this.counter = 0;
 		}
 
 		public void makeSet(int i) {
 			parent[i] = i;
+			this.counter++;
 		}
 
 		public void union(int i, int j) {
@@ -34,6 +37,7 @@ class Solution {
 
 			if (ri != rj) {
 				parent[ri] = rj;
+				this.counter--;
 			}
 		}
 
