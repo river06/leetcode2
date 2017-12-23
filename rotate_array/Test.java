@@ -12,9 +12,9 @@ public class Test {
 			{1,2,3,4,5,6}
 		};
 
-		int[] testK = {0,1,2,1,4,2};
+		int[] testK = {0,1,2,1,4,4};
 
-		for(int i=testNums.length-1; i<testNums.length; i++) {
+		for(int i=0; i<testNums.length; i++) {
 			int[] nums = testNums[i];
 			System.out.println( "nums: " + Arrays.toString( nums ) );
 			System.out.println( "k: " + testK[i] );
