@@ -201,14 +201,19 @@
 
 #### `2D dynamic programming`
 - **unique paths, unique paths II, minimum path sum, maximal square**: maintain 2D matrix
-- **dungeon game**: 2D backwards
 - **Wildcard Matching**: 3 cases: character before `*` used 0, 1, multiple times
 - **regular expression matching**: 3 cases: character before `*` used 0, 1, multiple times
 - **is subsequence**: 2D DP. Two rows are sufficient. Actually two pointers algorithm is sufficient.
 - **paint house**, **paint house II**: for paint house II, we can keep track of the two minimum previous costs.
 - **minimum window subsequence**: DP does not give the direct solution. When getting the leftmost element, we can use DP to get the normal answer and then loop through the DP results.
+- **backwards**
+    - **dungeon game**: 2D backwards
+    - **burst balloons**
 - **With optimization**
     - **Split Array Largest Sum**: optimize over previous results
+- **divide and conquer**
+    - For divide and conquer type problems, `DP[i][j]` represents the result for the divided problem with boundary `i` and `j`
+    - **burst balloons**: `DP[i][j]` represents the maximum coins for balloons from `i` to `j`
 
 ## Game Theory
 #### `minimax`
