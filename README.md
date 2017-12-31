@@ -255,6 +255,9 @@
 #### `misc`
 - **sparse matrix multiplication**: row row multiplication
 
+## Segment Tree
+- **range query sum 1D mutable**
+
 ## Sort
 
 #### `insertion sort`
