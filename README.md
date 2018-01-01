@@ -197,7 +197,7 @@
     - **word break**: optimization
     - **work break II**
     - **combination sum IV**
-    - **freedom trail**: length varying dp problem
+    - **freedom trail**: length varying DP problem
 
 #### `2D dynamic programming`
 - **unique paths, unique paths II, minimum path sum, maximal square**: maintain 2D matrix
