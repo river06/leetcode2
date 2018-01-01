@@ -197,7 +197,7 @@
     - **word break**: optimization
     - **work break II**
     - **combination sum IV**
-    - **partition equal subset sum**: knapsack problem. `DP[i][j]` represents if any subset of first `i` numbers can have sum equal to `j`.
+    - **freedom trail**: length varying dp problem
 
 #### `2D dynamic programming`
 - **unique paths, unique paths II, minimum path sum, maximal square**: maintain 2D matrix
@@ -211,9 +211,11 @@
     - **burst balloons**
 - **With optimization**
     - **Split Array Largest Sum**: optimize over previous results
+    - **partition equal subset sum**: knapsack problem. `DP[i][j]` represents if any subset of first `i` numbers can have sum equal to `j`.
 - **divide and conquer**
     - For divide and conquer type problems, `DP[i][j]` represents the result for the divided problem with boundary `i` and `j`
     - **burst balloons**: `DP[i][j]` represents the maximum coins for balloons from `i` to `j`
+    - **encode string with shortest length**: `DP[i][j]` stores the shortest encoded string from `i` to `j`
 
 ## Game Theory
 #### `minimax`
