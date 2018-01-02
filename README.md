@@ -207,6 +207,7 @@
 - **is subsequence**: 2D DP. Two rows are sufficient. Actually two pointers algorithm is sufficient.
 - **paint house**, **paint house II**: for paint house II, we can keep track of the two minimum previous costs.
 - **minimum window subsequence**: DP does not give the direct solution. When getting the leftmost element, we can use DP to get the normal answer and then loop through the DP results.
+- **maximum vacation days**
 - **backwards**
     - **dungeon game**: 2D backwards
     - **burst balloons**
