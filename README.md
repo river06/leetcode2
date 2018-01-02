@@ -213,9 +213,13 @@
     - **Split Array Largest Sum**: optimize over previous results
     - **partition equal subset sum**: knapsack problem. `DP[i][j]` represents if any subset of first `i` numbers can have sum equal to `j`.
 - **divide and conquer**
-    - For divide and conquer type problems, `DP[i][j]` represents the result for the divided problem with boundary `i` and `j`
     - **burst balloons**: `DP[i][j]` represents the maximum coins for balloons from `i` to `j`
+    - For divide and conquer type problems, `DP[i][j]` represents the result for the divided problem with boundary `i` and `j`
     - **encode string with shortest length**: `DP[i][j]` stores the shortest encoded string from `i` to `j`
+
+#### `ND dynamic programming`
+- **burst balloons**: augment `DP[i][j]` with the number on the left and on the right
+- **remove boxes**: augument `DP[i][j]` with the number of boxes with the same color as `box[i]` to the left/right 
 
 ## Game Theory
 #### `minimax`
