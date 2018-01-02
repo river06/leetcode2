@@ -190,6 +190,7 @@
 - **product of array except self**: two sweeps
 - **house robber**, **house robber II**
 - **valid parenthesis string**: Use two variables to track the min and max number of open parenthesis. Notice that the number of valid open parenthesis can not be less than zero.
+- **student attendance record II**: augmented DP
 - **With optimization**
     - **coin change**: `DP[i]` stores the value of minimum coins for amount `i`. Need to optimize over coins.
     - **longest increasing subsequence**: `DP[i]` stores the longest subsequence using `nums[i]`
@@ -219,7 +220,7 @@
 
 #### `ND dynamic programming`
 - **burst balloons**: augment `DP[i][j]` with the number on the left and on the right
-- **remove boxes**: augument `DP[i][j]` with the number of boxes with the same color as `box[i]` to the left/right 
+- **remove boxes**: augument `DP[i][j]` with the number of boxes with the same color as `box[i]` to the left/right
 
 ## Game Theory
 #### `minimax`
