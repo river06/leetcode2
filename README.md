@@ -207,13 +207,13 @@
 - **is subsequence**: 2D DP. Two rows are sufficient. Actually two pointers algorithm is sufficient.
 - **paint house**, **paint house II**: for paint house II, we can keep track of the two minimum previous costs.
 - **minimum window subsequence**: DP does not give the direct solution. When getting the leftmost element, we can use DP to get the normal answer and then loop through the DP results.
-- **maximum vacation days**
 - **backwards**
     - **dungeon game**: 2D backwards
     - **burst balloons**
 - **With optimization**
     - **Split Array Largest Sum**: optimize over previous results
     - **partition equal subset sum**: knapsack problem. `DP[i][j]` represents if any subset of first `i` numbers can have sum equal to `j`.
+    - **maximum vacation days**
 - **divide and conquer**
     - **burst balloons**: `DP[i][j]` represents the maximum coins for balloons from `i` to `j`
     - For divide and conquer type problems, `DP[i][j]` represents the result for the divided problem with boundary `i` and `j`
