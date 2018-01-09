@@ -425,6 +425,7 @@
 # MISC
 
 - Java `int` can not be null. `Integer` is nullable. `Collection` contains `objects`.
+- `gcd(a,b) {return b==0 ? a : gcd(b, a%b)}`
 - Good practice to use generic forms?
     - `Set<T> foo = new HashSet<T>();`
     - `Map<Character, Integer> map = new HashMap<>();`
