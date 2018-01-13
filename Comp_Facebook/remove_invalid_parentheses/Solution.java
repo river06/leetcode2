@@ -1,40 +1,40 @@
 import java.util.*;
 class Solution {
+	List<String> ret;
     public List<String> removeInvalidParentheses(String s) {
-       List<String> ret = new ArrayList<String>();
-	   dfs(ret, s, 0, 0, new char[] {'(', ')'});
-	   return ret;
+        ret = new ArrayList<String>();
+
+		dfs(new StringBuilder(s), 0, 0, new char[] {'(', ')'});
+		
+		return ret;
     }
 
-	/**
-	 * depth first search algorithm
-	 */
-	private void dfs(List<String> ret, String s, int lastEnd,
-		int removeStart, char[] par) {
-		int counter = 0;
-		for (int i=lastEnd; i<s.length(); i++) {
-			if (s.charAt(i) == par[0]) { counter++; }
-			if (s.charAt(i) == par[1]) { counter--; }
-			if (counter < 0) {
-				// we need to move one right parenthesis
-				// we also can not continue to get the reverse string
-				for (int r=removeStart; r<=i; r++) {
-					if (s.charAt(r) == par[1] &&
-						(r==removeStart || s.charAt(r-1) != par[1])) {
-						dfs(ret, s.substring(0, r) + s.substring(r+1),
-							i, r, par);
+	private void dfs(StringBuilder sb, int start, int removeStart, char[] pars) {
+		int nOpen = 0;
+		for (int r=start; r < sb.length(); r++) {
+			if (sb.charAt(r) == pars[0]) { nOpen++; }
+			if (sb.charAt(r) == pars[1]) { nOpen--; }
+
+			if (nOpen < 0) {
+				for (int i=removeStart; i<=r; i++) {
+					if (sb.charAt(i) == pars[1] &&
+						(i == removeStart || sb.charAt(i-1) != pars[1])) {
+						StringBuilder nb = new StringBuilder(sb);
+						nb.deleteCharAt(i);
+						dfs(nb, r, i, pars);
 					}
 				}
 				return;
 			}
 		}
 
-		String reversed = new StringBuilder(s).reverse().toString();
-
-		if (par[0] == '(') {
-			dfs(ret, reversed, 0, 0, new char[] {')', '('});
+		// reverse and remove extra open parentheses
+		sb.reverse();
+		
+		if (pars[0] == '(') {
+			dfs(sb, 0, 0, new char[] {')', '('});
 		} else {
-			ret.add(reversed);
+			ret.add(sb.toString());
 		}
 	}
 }

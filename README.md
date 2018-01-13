@@ -75,7 +75,7 @@
 
 #### `calculator series`
 - **evaluate reverse polish notation**: stack
-- **basic calculator**: solved with two stacks: one for operands one for numbers. Can be solved with just one stack. Use number to track current number. Use result to track current result. Use 1 and -1 trick to track sign. Use stack to track parenthesis. We push result = 0 and sign = 1 for multiple consecutive parenthesis.  
+- **basic calculator**: solved with two stacks: one for operands one for numbers. Can be solved with just one stack. Use number to track current number. Use result to track current result. Use 1 and -1 trick to track sign. Use stack to track parenthesis. We push result = 0 and sign = 1 for multiple consecutive parenthesis. 
 - **basic calculator II**: one stack with pushing `1` trick. Be careful with negative number at the beginning. Open a new stack when seeing "+,-", not "x,/"!
 - **expression and operators**: DFS is sufficient. Iterate through length of number. Break by operator position is enough.
 
@@ -101,7 +101,9 @@
     - stack: keep track of last invalid position before the valid substrings
     - two points: number of left should be greater than number of right. Otherwise reset.
 - **remove invalid parentheses**:
-    - DFS: don't try to remove the close parenthesis that has been removed. Don't remove consecutive open parentheses.
+    - Remove any extra close parenthesis will make the string valid in terms of close parenthesis for strings with more close parentheses
+    - Also need to revert the string or start from the end to remove extra open parentheses, consider `))()((`
+    - DFS: (1) don't try to remove the close parenthesis that has been removed. (2) Don't remove consecutive close parentheses.
     - BFS: kind of brute force. Need to generate all possible combinations.
 - **different ways to add parentheses**: divide and conquer is one way
 
@@ -429,8 +431,12 @@
 - Good practice to use generic forms?
     - `Set<T> foo = new HashSet<T>();`
     - `Map<Character, Integer> map = new HashMap<>();`
-- `Comparator<T> newComparator = new Comparator<T> { public int compare(T a, T b) { *** } };` uses anonymous class
-- A class should extend `Comparable<T>` interface to be comparable. implements `int compareTo(T object)`
+- `Arrays`
+    - Convert array to list: `Arrays.asList(1,3,3)` or `Arrays.asList(new Integer[] {1, 2, 3})`
+    - Sort an array of **Objects** in reverse order: `Arrays.sort(Integer[], Collections.reverseOrder())`
+- `Comparator`
+    - `Comparator<T> newComparator = new Comparator<T> { public int compare(T a, T b) { *** } };` uses anonymous class
+    - A class should extend `Comparable<T>` interface to be comparable. implements `int compareTo(T object)`
 - `StringBuilder`
     - `StringBuilder.length()`
     - `StringBuilder.setCharAt(int i, char c)`
@@ -444,4 +450,3 @@
     - Can call `queue.remove(element)` on a priority queue
 - `Collections.reverse(someCollection)` reverses the collection. It does **NOT** return the collection
 - int to char conversion does not work well with mod
-- Convert array to list: `Arrays.asList(1,3,3)` or `Arrays.asList(new Integer[] {1, 2, 3})`
