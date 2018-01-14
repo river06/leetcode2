@@ -228,9 +228,10 @@
     - **Split Array Largest Sum**: optimize over previous results
     - **partition equal subset sum**: knapsack problem. `DP[i][j]` represents if any subset of first `i` numbers can have sum equal to `j`.
     - **maximum vacation days**
+    - **Maximum Sum of 3 Non-Overlapping Subarrays**: `DP[i][j]` represents the maximum sum of `i` non-overlapping subarrays among the first `j` sums. We need another array `ID[i][j]` to keep track of the starting index of the last sum of all the `i` sums with maximum sum among the first `j` sums.
 - **divide and conquer**
-    - **burst balloons**: `DP[i][j]` represents the maximum coins for balloons from `i` to `j`
     - For divide and conquer type problems, `DP[i][j]` represents the result for the divided problem with boundary `i` and `j`
+    - **burst balloons**: `DP[i][j]` represents the maximum coins for balloons from `i` to `j`
     - **encode string with shortest length**: `DP[i][j]` stores the shortest encoded string from `i` to `j`
 
 #### `ND dynamic programming`

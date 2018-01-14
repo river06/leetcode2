@@ -1,50 +1,48 @@
 import java.util.*;
 class Solution {
     public int[] maxSumOfThreeSubarrays(int[] nums, int k) {
-		int n = 3;
+		// 2D DP approach
+		int n = 3; // number of sums in question
+		
+		// get the sums of sub-array with length k
 		int[] sums = getSums(nums, k);
 
 		System.out.println(Arrays.toString(sums));
+			
+		// dp[i][j] represents the maximum of sum of ith sub-array in the first j sums
+		int[][] dp = new int[n+1][sums.length+1];
+		// id[i][j] represents the start index of ith sub-array resulting in the max
+		// sum in the first j sums
+		int[][] id = new int[n+1][sums.length+1];
+
+		// initialize dp for the first sum
+		int maxSum = 0;
+		for (int j=0; j<sums.length; j++) {
+			dp[1][j+1] = Math.max(maxSum, sums[j]);
+			id[1][j+1] = sums[j] > maxSum ? j : id[1][j];
+			maxSum = dp[1][j+1];
+		}
+
+		//System.out.println(Arrays.toString(dp[1]));
+		//System.out.println(Arrays.toString(id[1]));
 		
-        int[][] dp = new int[sums.length+k][n+1];
-		int[][] id = new int[sums.length+k][n+1];
-		
-		// initialize the dp array
-		for (int i=0; i<k; i++) {
-			for (int j=1; j<n+1; j++) {
-				dp[i][j] = Integer.MIN_VALUE;
+		for (int i=2; i<=n; i++) {
+			for (int j=(i-1)*k; j < sums.length; j++) {
+				int dp1 = dp[i][j+1-1];
+				int dp2 = j-k >=0 ? dp[i-1][j-k+1] + sums[j] : Integer.MIN_VALUE;
+				dp[i][j+1] = Math.max(dp1, dp2);
+
+				id[i][j+1] = dp2 > dp1 ? j : id[i][j];
 			}
-		}
 
-		for (int i=0; i<sums.length; i++) {
-			for (int j=1; j<=n; j++) {
-				int tmp1 = dp[i-k+k][j-1] + sums[i];
-
-				int tmp2 = dp[i-1+k][j];
-
-				dp[i+k][j] = Math.max(tmp1, tmp2);
-
-				if (tmp1 > tmp2) {
-					id[i+k][j] = i;
-				} else {
-					id[i+k][j] = id[i-1+k][j];
-				}
-			}
-		}
-
-		for (int i=0; i<dp.length; i++) {
-			System.out.println(Arrays.toString(dp[i]));
-		}
-
-		for (int i=0; i<id.length; i++) {
 			System.out.println(Arrays.toString(id[i]));
 		}
 
-		int[] res = new int[3];
-        res[2] = id[sums.length + k - 1][3];
-        res[1] = id[res[2]][2];
-        res[0] = id[res[1]][1];        
-        return res;
+		int[] ret = new int[3];
+		ret[2] = id[n][sums.length];
+		ret[1] = id[n-1][ret[2]-k+1];
+		ret[0] = id[n-2][ret[1]-k+1];
+		return ret;
     }
 
 	private int[] getSums(int[] nums, int k) {
