@@ -75,9 +75,15 @@
 
 #### `calculator series`
 - **evaluate reverse polish notation**: stack
-- **basic calculator**: solved with two stacks: one for operands one for numbers. Can be solved with just one stack. Use number to track current number. Use result to track current result. Use 1 and -1 trick to track sign. Use stack to track parenthesis. We push result = 0 and sign = 1 for multiple consecutive parenthesis. 
+- **basic calculator**: solved with two stacks: one for operands one for numbers. Can be solved with just one stack. Use number to track current number. Use result to track current result. Use 1 and -1 trick to track sign. Use stack to track parenthesis. We push result = 0 and sign = 1 for multiple consecutive parenthesis.
 - **basic calculator II**: one stack with pushing `1` trick. Be careful with negative number at the beginning. Open a new stack when seeing "+,-", not "x,/"!
-- **expression and operators**: DFS is sufficient. Iterate through length of number. Break by operator position is enough.
+- **expression add operators**: DFS.
+	- Iterate over digits as a start to avoid +123 case
+	- Imagine a stack and use +,- to handle 'stack'. We can actually use a stack to solve the problem. Should be easier to think.
+	- Instead, keep track of summand and addand. Use '+' or '-' to partition the expression.
+- **different ways to add parentheses**:
+	- divide and conquer is one way
+	- can aslo be solved by divide and conquer type DP
 
 #### `loop series`
 - **find the duplicate number**: duplicated number forms a loop. Use two pointers to find the entrance. Return index.
@@ -95,17 +101,21 @@
 #### `parenthesis series`
 - **valid parentheses**: stack or counter
 - **valid parentheses string**: greedy algorithm. keep track of lower bound and upper bound of open parenthesis.
-- **generate parentheses**: backtracking
 - **longest valid parentheses**:
     - dynamic programming: discuss when last one is ( or )
     - stack: keep track of last invalid position before the valid substrings
     - two points: number of left should be greater than number of right. Otherwise reset.
+- **generate parentheses**:
+	- recursive: backtracking, keep track of remaining open parentheses and close parentheses
+	- iterative: (1) iterate over existing set (2) DP: Let `f(n)` be the set of valid parentheses with `n` pairs, `f(n) = (f(0))f(n-1), ..., (f(n-1))`
 - **remove invalid parentheses**:
     - Remove any extra close parenthesis will make the string valid in terms of close parenthesis for strings with more close parentheses
     - Also need to revert the string or start from the end to remove extra open parentheses, consider `))()((`
     - DFS: (1) don't try to remove the close parenthesis that has been removed. (2) Don't remove consecutive close parentheses.
     - BFS: kind of brute force. Need to generate all possible combinations.
-- **different ways to add parentheses**: divide and conquer is one way
+- **different ways to add parentheses**:
+	- divide and conquer is one way
+	- can aslo be solved by divide and conquer type DP
 
 ## Arrays
 - **set matrix zeros**: use first row and column to keep flags
@@ -205,7 +215,7 @@
 #### `2D dynamic programming`
 - **unique paths, unique paths II, minimum path sum, maximal square**: maintain 2D matrix
 - **Wildcard Matching**: 3 cases: character before `*` used 0, 1, multiple times
-- **regular expression matching**: 3 cases: character before `*` used 0, 1, multiple times
+- **regular expressionexpression matching**: 3 cases: character before `*` used 0, 1, multiple times
 - **is subsequence**: 2D DP. Two rows are sufficient. Actually two pointers algorithm is sufficient.
 - **paint house**, **paint house II**: for paint house II, we can keep track of the two minimum previous costs.
 - **minimum window subsequence**: DP does not give the direct solution. When getting the leftmost element, we can use DP to get the normal answer and then loop through the DP results.
