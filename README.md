@@ -12,10 +12,10 @@
 - **two sum (number not sorted)**: hash map to store `<number, position>` pairs
 - **two sum II (sorted)**: two pointers algorithm.
 - **two sum IV**: hashset
-- **three sum**: two pointers algorithm. Use one to sweep from start to end, the other to sweep backwards
+- **three sum**: two pointers algorithm. Use one to sweep from start to end, the other to sweep backwards. Skip duplicates at (1) sum equals to target (2) the looping index
 - **three sum closest**: basically two pointers algorithm
 - **three sum smaller**: get the number of pairs by considering the right boundary (fixing the middle pointer)
-- **four sum**: same two pointers algorithm as three sum. Remember to skip duplicate numbers
+- **four sum**: same two pointers algorithm as three sum. Skip duplicates at (1) sum equals to target (2) the two looping indices
 - **four sum II**: hash map to store `<sum of elements in A, B; occurrences>` pairs
 - **subarray sum equals k**: Hashmap from accumulative sum to occurrences. Calculate then put sum into hashmap.
 
