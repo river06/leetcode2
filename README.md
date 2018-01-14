@@ -117,6 +117,11 @@
 	- divide and conquer is one way
 	- can aslo be solved by divide and conquer type DP
 
+#### `schedule series`
+- **task scheduler**: count idle time by filling up the gaps
+- **rearrange string k distance apart**: can also use the same idea
+- **meeting room II**: greedy algorithm to insert interval or see start and end as independent events.
+
 ## Arrays
 - **set matrix zeros**: use first row and column to keep flags
 - **search 2D matrix**: binary search
@@ -127,9 +132,6 @@
 - **can place flowers**: pay attention to all cases
 - **rotate array**: Using Cyclic Replacements
 
-#### `task schedule`
-- **task scheduler**: count idle time by filling up the gaps
-- **rearrange string k distance apart**: can also use the same idea
 
 ## Backtracking
 #### `with memorization`

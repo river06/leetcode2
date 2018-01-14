@@ -10,31 +10,31 @@
 import java.util.*;
 class Solution {
     public int minMeetingRooms(Interval[] intervals) {
-        // sort intervals
-		Arrays.sort(intervals, new IntervalComparator());
+        Integer[] starts = new Integer[intervals.length];
+		Integer[] ends = new Integer[intervals.length];
+		for (int i=0; i<intervals.length; i++) {
+			starts[i] = intervals[i].start;
+			ends[i] = intervals[i].end;
+		}
+		
+		Arrays.sort(starts);
+		Arrays.sort(ends);
 
-		List<Interval> li = new ArrayList<Interval>();
-		for (Interval interval: intervals) {
-			boolean isAdded = false;
-			for (int i=0; i<li.size(); i++) {
-				if (li.get(i).end <= interval.start) {
-					li.get(i).end = interval.end;
-					isAdded = true;
-					break;
-				}
-			}
-			if (!isAdded) {
-				li.add(interval);
-			}
-		}
-    }
-	class IntervalComparator implements Comparator<Interval> {
-		public int compare (Interval a, Interval b) {
-			if (a.start != b.start) {
-				return a.start - b.start;
+		int s = 0;
+		int e = 0;
+		int nRoom = 0;
+		int maxRoom = 0;
+		while (s < intervals.length) {
+			if (starts[s] < ends[e]) {
+				nRoom++;
+				maxRoom = Math.max(maxRoom, nRoom);
+				s++;
 			} else {
-				return b.end - a.end;
+				nRoom--;
+				e++;
 			}
 		}
-	}
+
+		return maxRoom;
+    }
 }
