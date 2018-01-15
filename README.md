@@ -44,12 +44,15 @@
             - Build the lookup table for the target string!
         - brutal force: reverse the string and compare the beginning and end
         - two pointers algorithm: use the counting property to find the length of the longest palindrome.
-- **dynamic programming** - `DP(i,j)` if `string(i,j)` is palindrome or the length
+- **dynamic programming** - `DP(i,j)` if `string(i,j)` is palindrome or the length.
     - **longest palindromic substring**
-        - `Manacher algorithm`   
+        - `Manacher algorithm`
             - This needs inserting special character between original characters. It makes the algorithm much easier to understand. The special characters are also inserted in the edges. The length of half of the palindrome is the length of the original palindrome.
         - Expand around center: be careful of even length palindrome. Just call the expand function twice, it is much easier than inserting special character between original characters.
-        - Dynamic programming: `dp(i,j)` if string(i,j) is palindrome. `dp(i,j)` depends on `dp(i+1, j-1)`, so fill up the matrix backwards in `i` direction and forwards in `j` direction.
+        - Dynamic programming:
+        	- `dp(i,j)` if string(i,j) is palindrome. `dp(i,j)` depends on `dp(i+1, j-1)`, so fill up the matrix backwards in `i` direction and forwards in `j` direction.
+        	- Or iterate over `j` at first. This way, the iteration can start from the beginning.
+        	- Might also be iterated by the divide and conquer way.
     - **palindrome partitioning**: my solution is DP plus backtracking
     - **palindrome partitioning II**: my solution uses two DP, but they can be combined into one if the iteration sequence is the same.
     - **longest palindrome subsequence**: `DP(i,j)` stores the maximum length of palindromic substring
@@ -243,6 +246,9 @@
 - **can I win**: can be solved with negamax algorithm since this is zero sum game. Use hash map to remember result. Can reduce from O(n!) to O(2^n)
 
 ## Graph
+#### `basics`
+- **clone graph** (1) BFS use queue and HashMap (2) DFS use (stack) recursive and HashMap
+
 #### `union find`
 - **number of islands**, **number of islands II**
 
@@ -295,6 +301,7 @@
 - **remove duplicates from sorted array**: bucket sort
 - **maximum gap**: buckets are of length (max-min)/(n-1), and use pigeon hole
 - **valid anagram**: alphabet buckets
+- **maximum swap**: we need to know the last occurance of every digits. Swap if larger digit exists later.
 
 #### `quick sort`
 - Quick sort does not need to keep track of the right indexes. In-line sort.
@@ -386,7 +393,7 @@
 
 #### `sum`
 - **path sum**: pay attention to not leaf paths
-- **path sum II**: not all functions of LinkedList is available in List. new LinkedList<T>(oldList) can be sed to clone a list.
+- **path sum II**: not all functions of LinkedList is available in List. `new LinkedList<T>(oldList)` can be used to clone a list.
 - **path sum III**: need to separate recursion with path finding logic
 - **binary tree maximum path sum**: can use an array to return multiple values of the same type!
 - **house robbery III**: return two values
@@ -411,7 +418,7 @@
 - **balanced binary tree**: return -1 as not balanced
 - **count complete tree nodes**: use left depth and right depth to shortcut some calculation
 - **invert binary tree**: BFS can also work, I think
-- **binary tree path**: string builder
+- **binary tree paths**: Three solutions: (1) Recursive and backtracking (2) BFS with helper queue to store the paths (3) DFS with helper stack to store the current paths.
 - **diameter of binary tree**: use int[] to pass two values
 - **trim a BST**
 
