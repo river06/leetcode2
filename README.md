@@ -125,6 +125,10 @@
 - **rearrange string k distance apart**: can also use the same idea
 - **meeting room II**: greedy algorithm to insert interval or see start and end as independent events.
 
+#### `meeting point series`
+- **walls and gates**: BFS from the position you want to reach
+- **best meeting point**: median and note that vertical direction is independent of the horizontal direction
+
 ## Arrays
 - **set matrix zeros**: use first row and column to keep flags
 - **search 2D matrix**: binary search
@@ -134,7 +138,6 @@
 - **majority element II**: Moore's algorithm variation. Notice how we have to add before subtract
 - **can place flowers**: pay attention to all cases
 - **rotate array**: Using Cyclic Replacements
-
 
 ## Backtracking
 #### `with memorization`
@@ -211,6 +214,7 @@
 - **With optimization**
     - **coin change**: `DP[i]` stores the value of minimum coins for amount `i`. Need to optimize over coins.
     - **longest increasing subsequence**: `DP[i]` stores the longest subsequence using `nums[i]`
+    - **number of longest increasing subsequence**: Two DPs. One for the length the other for the count.
     - **perfect squares** `DP[i]` stores the number of squares for integer i
     - **word break**: optimization
     - **work break II**
@@ -251,6 +255,7 @@
 
 #### `union find`
 - **number of islands**, **number of islands II**
+- **accounts merge**: HashMap to track email to name. This should contain all emails. Union Find to union all emails. Loop through the hashmap that contains all the emails and find the representing email.
 
 ## Hash
 
@@ -259,8 +264,9 @@
 
 #### `hash map`
 - **intersection of two arrays II**: hash map
-- **isomorphic strings `LinkedIn`**: Use array of size 256 for character mapping! hash map or hash table
+- **isomorphic strings**: Use array of size 256 for character mapping! hash map or hash table
 - **max points on a line**: gcd works great when calculating the slope
+- **continuous subarray sum**: map from module of sum to index
 
 ## Linked List
 #### `double linked list`

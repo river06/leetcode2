@@ -1,20 +1,21 @@
+import java.util.*;
 class Solution {
     public int maximumSwap(int num) {
-        char[] arr = Integer.toString(num).toCharArray();
-
-		int[] digit2LastIdx = new int[10];
-
-		for (int i=0; i<arr.length; i++) {
-			digit2LastIdx[arr[i] - '0'] = i;
+        int[] digit2Pos = new int[10];
+		
+		// get the digits to position and the digits
+		char[] numStr = Integer.toString(num).toCharArray();
+		for (int i=0; i<numStr.length; i++) {
+			digit2Pos[numStr[i]-'0'] = i;
 		}
-
-		for (int i=0; i<arr.length; i++) {
-			for (int j=9; j > arr[i] - '0'; j--) {
-				if (digit2LastIdx[j] > i) {
-					char tmp = arr[i];
-					arr[i] = arr[digit2LastIdx[j]];
-					arr[digit2LastIdx[j]] = tmp;
-					return Integer.parseInt(new String(arr));
+		
+		// try to swap
+		for (int i=0; i<numStr.length; i++) {
+			for (int digit=9; digit > numStr[i]-'0'; digit--) {
+				if (digit2Pos[digit] > i) {
+					numStr[digit2Pos[digit]] = (char) (numStr[i]);
+					numStr[i] = (char) (digit+'0');
+					return Integer.parseInt(new String(numStr));
 				}
 			}
 		}
