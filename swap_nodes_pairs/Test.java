@@ -2,7 +2,9 @@ public class Test {
 	public static void main(String[] args) {
 		Solution solver = new Solution();
 		ListNode head = new ListNode(0);
-		int[] nodes = {1,2};
+		//int[] nodes = {1,2};
+		//int[] nodes = {1, 2, 3};
+		int[] nodes = {1};
 		ListNode p0 = head;
 		for(int i=0; i<nodes.length; i++) {
 			p0.next = new ListNode(nodes[i]);
