@@ -56,7 +56,7 @@
     - **palindrome partitioning**: my solution is DP plus backtracking
     - **palindrome partitioning II**: my solution uses two DP, but they can be combined into one if the iteration sequence is the same.
     - **longest palindrome subsequence**: `DP(i,j)` stores the maximum length of palindromic substring
-    - **count different palindromic subsequences**: can use 3D DP to solve the problem
+    - **count different palindromic subsequences**: can use 3D DP to solve the problem. The extra dimension stores the information about the boundary character.
 - **misc**
     - **palindrome number**: invert half the number to avoid overflow
     - **valid palindrome**: just be careful of special cases
@@ -67,6 +67,7 @@
     - **longest palindrome**: count
     - **largest palindrome product**: this is a math problem. For n digits, the product is at most `10^2n - 2*10^n + 1`, which means that the left part is at most `10^n - 3`. The product is at least `10^(2n-2)`, which means that the left part is at least `10^(n-1)`.
     - **find the closest palindrome**: a math problem. The trick is to zero out the right part of the original number. Add 1 to the middle number or subtract 1 from the zero-out number.
+    - **palindromic substrings**: count the length of palindromic substrings
 
 #### `stair shape stack series`
 - **largest rectangle in histogram**: increasing stack to find border, ~~left and right sweep~~, left to right sweep is enough, when decrease, current bar is right border. Upside down with container with most waster.
@@ -129,6 +130,26 @@
 - **walls and gates**: BFS from the position you want to reach
 - **best meeting point**: median and note that vertical direction is independent of the horizontal direction
 
+#### `permutation combination series`
+- **permutations**: (1) recursive: backtracking algorithm (2) iteritative: given current set, insert next number into every possible positions
+- **permutations II**: (1) recursive: backtracking algorithm. Skip if last same number has not been used. (2) iterative: given current set, insert next number into every possible positions if the number are not the same.
+- **next permutation**: This is a math problem: (1) Find decreased number (2) find the number that is larger than the decreased number (3) swap them (4) reorder the remaining numbers in asending order
+- **palindrome permutation**: count the number of letters
+- **palindrome permutation II**: backtracking
+- **permutation sequence**: this is a math problem. Calculate the number of permutations given the start index and use that to find the corresponding number
+- **permutation in string**: seems to be a sliding window and hashmap problem
+- **combinations**:
+	- recursive: backtracking. Start from current number. 
+	- recursive based on the condition that `C(n, k) = C(n-1, k) + C(n-1, k-1)`
+	- DP: `DP(i, j)` stores the combinations from `i` to `j`.
+	- iterative: add on to existing set one number by one number
+- **combination sum**: (1) recusive: backtracking (2) DP (3) using the combination iteration idea?
+- **combination sum II**: (1) backtracking (2) DP
+- **combination sum III**: (1) backtracking
+- **combination sum IV**: (1) backtracking (2) DP: `DP[i]` stores the number of combinations for `sum = i`
+- **factor combinations**: (1) backtracking (2) ?
+- **Letter Combinations of a Phone Number**: BFS
+
 ## Arrays
 - **set matrix zeros**: use first row and column to keep flags
 - **search 2D matrix**: binary search
@@ -151,7 +172,7 @@
 - **subsets, word search**: backtracking
 - **permutations**, **permutations II**
 - **factor combinations**: The next factor needs to be larger than previous factors
-- **combination sum**, **combination sum II**, **combination sum III**, **permutations**, **permutations II**
+- **combination sum**, **combination sum II**, **combination sum III**
 - **word pattern II**
 - **sudoku solver**
 
